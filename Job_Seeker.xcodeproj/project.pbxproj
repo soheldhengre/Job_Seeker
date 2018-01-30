@@ -61,8 +61,11 @@
 		7DD0A3B4202043FC006084F4 /* Job_Seeker */ = {
 			isa = PBXGroup;
 			children = (
+				E96C0E0020204F3700A90543 /* Supporting File */,
+				E96C0DFF20204F3100A90543 /* View */,
+				E96C0DFE20204F2900A90543 /* Model */,
+				E96C0DFD20204F1D00A90543 /* Controller */,
 				7DD0A3B5202043FC006084F4 /* AppDelegate.swift */,
-				7DD0A3B7202043FC006084F4 /* ViewController.swift */,
 				7DD0A3B9202043FC006084F4 /* Main.storyboard */,
 				7DD0A3BC202043FC006084F4 /* Assets.xcassets */,
 				7DD0A3BE202043FC006084F4 /* LaunchScreen.storyboard */,
@@ -86,6 +89,35 @@
 				42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E96C0DFD20204F1D00A90543 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7DD0A3B7202043FC006084F4 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E96C0DFE20204F2900A90543 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E96C0DFF20204F3100A90543 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E96C0E0020204F3700A90543 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
