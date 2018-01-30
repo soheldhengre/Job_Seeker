@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38216BA674B72F2200EEC2DC /* Pods_Job_Seeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */; };
 		7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B5202043FC006084F4 /* AppDelegate.swift */; };
 		7DD0A3B8202043FC006084F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B7202043FC006084F4 /* ViewController.swift */; };
 		7DD0A3BB202043FC006084F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B9202043FC006084F4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Job_Seeker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker.release.xcconfig"; sourceTree = "<group>"; };
 		7DD0A3B2202043FC006084F4 /* Job_Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Job_Seeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD0A3B5202043FC006084F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DD0A3B7202043FC006084F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7DD0A3BC202043FC006084F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD0A3BF202043FC006084F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD0A3C1202043FC006084F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96A3DC413A9478F0359DF95D /* Pods-Job_Seeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Job_Seeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Job_Seeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38216BA674B72F2200EEC2DC /* Pods_Job_Seeker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				7DD0A3B4202043FC006084F4 /* Job_Seeker */,
 				7DD0A3B3202043FC006084F4 /* Products */,
+				B2A37D392941EC83E2AE77CD /* Pods */,
+				A0719C175B54154D7546B161 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Job_Seeker;
 			sourceTree = "<group>";
 		};
+		A0719C175B54154D7546B161 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2A37D392941EC83E2AE77CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96A3DC413A9478F0359DF95D /* Pods-Job_Seeker.debug.xcconfig */,
+				42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DD0A3C4202043FC006084F4 /* Build configuration list for PBXNativeTarget "Job_Seeker" */;
 			buildPhases = (
+				AC260D1BBD2374EB42291579 /* [CP] Check Pods Manifest.lock */,
 				7DD0A3AE202043FC006084F4 /* Sources */,
 				7DD0A3AF202043FC006084F4 /* Frameworks */,
 				7DD0A3B0202043FC006084F4 /* Resources */,
+				38595C60C63CB80FAA1260B9 /* [CP] Embed Pods Frameworks */,
+				C4C5D83DA1E0B70B51ACA34B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38595C60C63CB80FAA1260B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC260D1BBD2374EB42291579 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Job_Seeker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4C5D83DA1E0B70B51ACA34B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7DD0A3AE202043FC006084F4 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		7DD0A3C5202043FC006084F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96A3DC413A9478F0359DF95D /* Pods-Job_Seeker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +370,7 @@
 		};
 		7DD0A3C6202043FC006084F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
