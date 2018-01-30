@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -130,20 +131,72 @@
             </objects>
             <point key="canvasLocation" x="-1135" y="1578"/>
         </scene>
-        <!--View Controller-->
+        <!--Slider MenuVC-->
         <scene sceneID="GjU-Ep-V2f">
             <objects>
-                <viewController id="fyJ-jn-7tK" sceneMemberID="viewController">
+                <viewController id="fyJ-jn-7tK" customClass="SliderMenuVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="agn-nY-mji">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-VC-JVt">
+                                <rect key="frame" x="0.0" y="159" width="375" height="653"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderMenuCell" rowHeight="50" id="9fu-lN-LsO" customClass="SliderMenuCell" customModule="Job_Seeker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fu-lN-LsO" id="EXw-S4-8dZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzs-kp-d7J">
+                                                    <rect key="frame" x="25" y="14" width="235" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Kzs-kp-d7J" secondAttribute="trailing" constant="100" id="AiB-3i-Iu9"/>
+                                                <constraint firstItem="Kzs-kp-d7J" firstAttribute="centerY" secondItem="EXw-S4-8dZ" secondAttribute="centerY" id="XH1-rq-59v"/>
+                                                <constraint firstItem="Kzs-kp-d7J" firstAttribute="leading" secondItem="EXw-S4-8dZ" secondAttribute="leadingMargin" constant="10" id="jdk-7x-MEx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="optionLbl" destination="Kzs-kp-d7J" id="0wT-ux-rPZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Personal_Details" translatesAutoresizingMaskIntoConstraints="NO" id="R1K-ER-mxB" customClass="CircleImage" customModule="Job_Seeker" customModuleProvider="target">
+                                <rect key="frame" x="25" y="53" width="85" height="85"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="NQy-i7-LS4"/>
+                                    <constraint firstAttribute="width" constant="85" id="b2Y-Mc-uUp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wou-VC-JVt" firstAttribute="leading" secondItem="4rT-Xd-dpa" secondAttribute="leading" id="4Za-3F-CsO"/>
+                            <constraint firstAttribute="bottom" secondItem="Wou-VC-JVt" secondAttribute="bottom" id="QA5-DE-IVf"/>
+                            <constraint firstItem="R1K-ER-mxB" firstAttribute="leading" secondItem="4rT-Xd-dpa" secondAttribute="leading" constant="25" id="Uuw-1C-9Rn"/>
+                            <constraint firstItem="Wou-VC-JVt" firstAttribute="trailing" secondItem="4rT-Xd-dpa" secondAttribute="trailing" id="gQb-CE-TZc"/>
+                            <constraint firstItem="R1K-ER-mxB" firstAttribute="top" secondItem="4rT-Xd-dpa" secondAttribute="top" constant="9" id="ogj-4s-FVf"/>
+                            <constraint firstItem="Wou-VC-JVt" firstAttribute="top" secondItem="R1K-ER-mxB" secondAttribute="bottom" constant="21" id="yxn-cA-vWR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4rT-Xd-dpa"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Wou-VC-JVt" id="fjK-ri-0R9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GUn-jo-Lq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-380" y="1979"/>
+            <point key="canvasLocation" x="-380" y="1978.8177339901479"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iAR-h0-83F">
@@ -171,7 +224,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.15686274509803921" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="XLX-BU-Wg3" secondAttribute="bottom" constant="12" id="QWL-wM-As7"/>
                                     <constraint firstItem="XLX-BU-Wg3" firstAttribute="leading" secondItem="jtb-bd-fyx" secondAttribute="leading" constant="12" id="UBA-6g-UMi"/>
@@ -329,6 +382,7 @@
     <resources>
         <image name="Employer" width="100" height="100"/>
         <image name="Jobseeker" width="100" height="100"/>
+        <image name="Personal_Details" width="128" height="128"/>
         <image name="bg" width="720" height="1280"/>
         <image name="logo" width="242" height="180"/>
         <image name="nave_icon" width="66" height="57"/>
