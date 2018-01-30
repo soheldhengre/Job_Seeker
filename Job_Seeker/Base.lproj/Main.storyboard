@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,20 +28,34 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7ib-ia-shL">
-                                <rect key="frame" x="66" y="176" width="242" height="120"/>
+                                <rect key="frame" x="97" y="176" width="180" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="Y08-vF-BAf"/>
+                                    <constraint firstAttribute="width" constant="180" id="HJL-M1-t7L"/>
+                                    <constraint firstAttribute="height" constant="120" id="SyJ-ds-tm7"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2O-dH-a0y">
+                                <rect key="frame" x="164" y="391" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJW-om-nnK">
+                                <rect key="frame" x="164" y="449" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7ib-ia-shL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LnV-nq-Nqa"/>
+                            <constraint firstItem="7ib-ia-shL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-170" id="7v3-nw-Len"/>
                             <constraint firstItem="Igu-p5-P49" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OVF-zu-EJz"/>
                             <constraint firstItem="Igu-p5-P49" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tbi-fD-Dnu"/>
-                            <constraint firstItem="7ib-ia-shL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-170" id="YAy-xS-hnF"/>
                             <constraint firstItem="Igu-p5-P49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6R-Mm-puk"/>
+                            <constraint firstItem="7ib-ia-shL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ef7-TM-dnH"/>
                             <constraint firstAttribute="bottom" secondItem="Igu-p5-P49" secondAttribute="bottom" id="o3o-Wq-EvH"/>
+                            <constraint firstItem="7ib-ia-shL" firstAttribute="width" secondItem="Igu-p5-P49" secondAttribute="height" multiplier="45:203" id="uBU-c0-S34"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
