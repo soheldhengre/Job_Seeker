@@ -13,6 +13,7 @@
 		7DD0A3BD202043FC006084F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BC202043FC006084F4 /* Assets.xcassets */; };
 		7DD0A3C0202043FC006084F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BE202043FC006084F4 /* LaunchScreen.storyboard */; };
 		7DE943EB2020557C00B6D384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE943EA2020557C00B6D384 /* Main.storyboard */; };
+		7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE943F420207EE700B6D384 /* SWRevealViewController.m */; };
 		E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,9 @@
 		7DD0A3BF202043FC006084F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD0A3C1202043FC006084F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DE943EA2020557C00B6D384 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7DE943F220207EDB00B6D384 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		7DE943F320207EE600B6D384 /* Job_Seeker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Job_Seeker-Bridging-Header.h"; sourceTree = "<group>"; };
+		7DE943F420207EE700B6D384 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		96A3DC413A9478F0359DF95D /* Pods-Job_Seeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Job_Seeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Job_Seeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
@@ -119,6 +123,9 @@
 		E96C0E0020204F3700A90543 /* Supporting File */ = {
 			isa = PBXGroup;
 			children = (
+				7DE943F220207EDB00B6D384 /* SWRevealViewController.h */,
+				7DE943F420207EE700B6D384 /* SWRevealViewController.m */,
+				7DE943F320207EE600B6D384 /* Job_Seeker-Bridging-Header.h */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 				TargetAttributes = {
 					7DD0A3B1202043FC006084F4 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -259,6 +267,7 @@
 				E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */,
 				7DD0A3B8202043FC006084F4 /* ViewController.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
+				7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,11 +397,14 @@
 			baseConfigurationReference = 96A3DC413A9478F0359DF95D /* Pods-Job_Seeker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Job_Seeker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Nick.Job-Seeker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Job_Seeker/Supporting File/Job_Seeker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,11 +415,13 @@
 			baseConfigurationReference = 42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Job_Seeker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Nick.Job-Seeker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Job_Seeker/Supporting File/Job_Seeker-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
