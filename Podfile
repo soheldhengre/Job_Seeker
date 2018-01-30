@@ -8,5 +8,6 @@ target 'Job_Seeker' do
   # Pods for Job_Seeker
 pod 'Alamofire', '~> 4.5'
 pod 'SVProgressHUD'
+pod 'SlideMenuControllerSwift'
 
 end
