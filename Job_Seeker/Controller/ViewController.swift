@@ -7,24 +7,15 @@
 //
 
 import UIKit
-import SlideMenuControllerSwift
 
-class ViewController: SlideMenuController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func awakeFromNib() {
-        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "Main") {
-            self.mainViewController = controller
-        }
-        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "Left") {
-            self.leftViewController = controller
-        }
-        super.awakeFromNib()
-    }
+    
 
 }
 
