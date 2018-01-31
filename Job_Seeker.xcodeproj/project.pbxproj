@@ -15,6 +15,8 @@
 		7DD0A3B8202043FC006084F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B7202043FC006084F4 /* ViewController.swift */; };
 		7DD0A3BD202043FC006084F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BC202043FC006084F4 /* Assets.xcassets */; };
 		7DD0A3C0202043FC006084F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BE202043FC006084F4 /* LaunchScreen.storyboard */; };
+		7DDD444820221CDF003E5799 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD444720221CDF003E5799 /* ProfileVC.swift */; };
+		7DDD444C20223322003E5799 /* second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DDD444B20223322003E5799 /* second.storyboard */; };
 		7DE943EB2020557C00B6D384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE943EA2020557C00B6D384 /* Main.storyboard */; };
 		7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE943F420207EE700B6D384 /* SWRevealViewController.m */; };
 		E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38720219577004DE17C /* RegisterScreenVC.swift */; };
@@ -37,6 +39,8 @@
 		7DD0A3BC202043FC006084F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD0A3BF202043FC006084F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD0A3C1202043FC006084F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DDD444720221CDF003E5799 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7DDD444B20223322003E5799 /* second.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = second.storyboard; sourceTree = "<group>"; };
 		7DE943EA2020557C00B6D384 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		7DE943F220207EDB00B6D384 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		7DE943F320207EE600B6D384 /* Job_Seeker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Job_Seeker-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				E96C0DFD20204F1D00A90543 /* Controller */,
 				7DD0A3B5202043FC006084F4 /* AppDelegate.swift */,
 				7DE943EA2020557C00B6D384 /* Main.storyboard */,
+				7DDD444B20223322003E5799 /* second.storyboard */,
 				7DD0A3BC202043FC006084F4 /* Assets.xcassets */,
 				7DD0A3BE202043FC006084F4 /* LaunchScreen.storyboard */,
 				7DD0A3C1202043FC006084F4 /* Info.plist */,
@@ -124,6 +129,7 @@
 				E9BAE38720219577004DE17C /* RegisterScreenVC.swift */,
 				E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */,
 				E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */,
+				7DDD444720221CDF003E5799 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				7DD0A3BD202043FC006084F4 /* Assets.xcassets in Resources */,
 				7DE943EB2020557C00B6D384 /* Main.storyboard in Resources */,
 				E9BAE38E2021A600004DE17C /* CompanyDetailsVC.xib in Resources */,
+				7DDD444C20223322003E5799 /* second.storyboard in Resources */,
 				E9BAE3922021BBB9004DE17C /* CompanyProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DDD444820221CDF003E5799 /* ProfileVC.swift in Sources */,
 				E9BAE3912021BBB9004DE17C /* CompanyProfileVC.swift in Sources */,
 				7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */,
 				E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */,

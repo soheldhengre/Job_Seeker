@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bn7-c9-7iN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wEr-eO-gXW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -112,144 +111,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izH-4L-b8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1102" y="616"/>
-        </scene>
-        <!--Reveal View Controller-->
-        <scene sceneID="EgV-or-Dhk">
-            <objects>
-                <viewController id="bn7-c9-7iN" customClass="SWRevealViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fo7-1P-Rgq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="JaS-pd-qdq"/>
-                    </view>
-                    <connections>
-                        <segue destination="M7v-Pi-nrb" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="s8e-vE-7G1"/>
-                        <segue destination="fyJ-jn-7tK" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="c30-JC-zQT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L5W-Qx-9Nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1135" y="1578"/>
-        </scene>
-        <!--Slider MenuVC-->
-        <scene sceneID="GjU-Ep-V2f">
-            <objects>
-                <viewController id="fyJ-jn-7tK" customClass="SliderMenuVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="agn-nY-mji">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wou-VC-JVt">
-                                <rect key="frame" x="0.0" y="159" width="375" height="653"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderMenuCell" rowHeight="50" id="9fu-lN-LsO" customClass="SliderMenuCell" customModule="Job_Seeker" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="50"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9fu-lN-LsO" id="EXw-S4-8dZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzs-kp-d7J">
-                                                    <rect key="frame" x="25" y="14" width="235" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Kzs-kp-d7J" secondAttribute="trailing" constant="100" id="AiB-3i-Iu9"/>
-                                                <constraint firstItem="Kzs-kp-d7J" firstAttribute="centerY" secondItem="EXw-S4-8dZ" secondAttribute="centerY" id="XH1-rq-59v"/>
-                                                <constraint firstItem="Kzs-kp-d7J" firstAttribute="leading" secondItem="EXw-S4-8dZ" secondAttribute="leadingMargin" constant="10" id="jdk-7x-MEx"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="optionLbl" destination="Kzs-kp-d7J" id="0wT-ux-rPZ"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Personal_Details" translatesAutoresizingMaskIntoConstraints="NO" id="R1K-ER-mxB" customClass="CircleImage" customModule="Job_Seeker" customModuleProvider="target">
-                                <rect key="frame" x="25" y="53" width="85" height="85"/>
-                                <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="85" id="NQy-i7-LS4"/>
-                                    <constraint firstAttribute="width" constant="85" id="b2Y-Mc-uUp"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="Wou-VC-JVt" firstAttribute="leading" secondItem="4rT-Xd-dpa" secondAttribute="leading" id="4Za-3F-CsO"/>
-                            <constraint firstAttribute="bottom" secondItem="Wou-VC-JVt" secondAttribute="bottom" id="QA5-DE-IVf"/>
-                            <constraint firstItem="R1K-ER-mxB" firstAttribute="leading" secondItem="4rT-Xd-dpa" secondAttribute="leading" constant="25" id="Uuw-1C-9Rn"/>
-                            <constraint firstItem="Wou-VC-JVt" firstAttribute="trailing" secondItem="4rT-Xd-dpa" secondAttribute="trailing" id="gQb-CE-TZc"/>
-                            <constraint firstItem="R1K-ER-mxB" firstAttribute="top" secondItem="4rT-Xd-dpa" secondAttribute="top" constant="9" id="ogj-4s-FVf"/>
-                            <constraint firstItem="Wou-VC-JVt" firstAttribute="top" secondItem="R1K-ER-mxB" secondAttribute="bottom" constant="21" id="yxn-cA-vWR"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="4rT-Xd-dpa"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="Wou-VC-JVt" id="fjK-ri-0R9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GUn-jo-Lq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-380" y="1978.8177339901479"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iAR-h0-83F">
-            <objects>
-                <viewController id="M7v-Pi-nrb" customClass="ViewController" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8sQ-bE-2cB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtb-bd-fyx" customClass="GradientView" customModule="Job_Seeker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLX-BU-Wg3">
-                                        <rect key="frame" x="12" y="48" width="24" height="17"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="17" id="clG-Hh-Nc2"/>
-                                            <constraint firstAttribute="width" constant="24" id="s45-fV-X5A"/>
-                                        </constraints>
-                                        <state key="normal" image="nave_icon"/>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-Ma-TXN">
-                                        <rect key="frame" x="164" y="44.666666666666664" width="47" height="23.999999999999993"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.078431372549019607" green="0.15686274509803921" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="XLX-BU-Wg3" secondAttribute="bottom" constant="12" id="QWL-wM-As7"/>
-                                    <constraint firstItem="XLX-BU-Wg3" firstAttribute="leading" secondItem="jtb-bd-fyx" secondAttribute="leading" constant="12" id="UBA-6g-UMi"/>
-                                    <constraint firstItem="d5L-Ma-TXN" firstAttribute="centerY" secondItem="XLX-BU-Wg3" secondAttribute="centerY" id="faX-Fs-vzs"/>
-                                    <constraint firstAttribute="height" constant="77" id="re9-C1-Quf"/>
-                                    <constraint firstItem="d5L-Ma-TXN" firstAttribute="centerX" secondItem="jtb-bd-fyx" secondAttribute="centerX" id="ztx-j5-et9"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="jtb-bd-fyx" firstAttribute="leading" secondItem="Lba-JJ-HoP" secondAttribute="leading" id="QQJ-kQ-lL1"/>
-                            <constraint firstItem="jtb-bd-fyx" firstAttribute="trailing" secondItem="Lba-JJ-HoP" secondAttribute="trailing" id="WkD-NC-vrL"/>
-                            <constraint firstItem="jtb-bd-fyx" firstAttribute="top" secondItem="8sQ-bE-2cB" secondAttribute="top" id="jvO-CP-3hF"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Lba-JJ-HoP"/>
-                    </view>
-                    <connections>
-                        <outlet property="menuBtn" destination="XLX-BU-Wg3" id="6Kc-4l-Q62"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oL2-3V-PvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-379" y="1290"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="N3h-cj-TVk">
@@ -382,6 +243,7 @@
         <!--Register ScreenVC-->
         <scene sceneID="1Ax-qf-XEW">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PuI-E0-TAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RegisterScreenVC" id="lMo-b4-dxt" customClass="RegisterScreenVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HMQ-11-nde">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -492,17 +354,47 @@
                         <outlet property="nxtBtn" destination="awr-z1-P0W" id="IcX-fU-HYF"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PuI-E0-TAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="360.80000000000001" y="615.51724137931035"/>
+            <point key="canvasLocation" x="409" y="616"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KFy-rl-SP7">
+            <objects>
+                <viewController id="wEr-eO-gXW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lKi-sQ-KmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-oE-ZgJ">
+                                <rect key="frame" x="164" y="391" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="vAt-iP-JgK" kind="show" id="WG2-8F-KAV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="uyr-Fa-EJq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3C-D0-JYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="2492"/>
+        </scene>
+        <!--second-->
+        <scene sceneID="HNT-2i-tq1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="second" id="vAt-iP-JgK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Okb-Aq-T92" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="2500"/>
         </scene>
     </scenes>
     <resources>
         <image name="Employer" width="100" height="100"/>
         <image name="Jobseeker" width="100" height="100"/>
-        <image name="Personal_Details" width="128" height="128"/>
         <image name="bg" width="720" height="1280"/>
         <image name="logo" width="242" height="180"/>
-        <image name="nave_icon" width="66" height="57"/>
     </resources>
 </document>

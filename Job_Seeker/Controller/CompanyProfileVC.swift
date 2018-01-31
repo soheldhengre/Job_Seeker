@@ -13,9 +13,13 @@ class CompanyProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
 
+    @IBAction func savePressed(_ sender: Any) {
+       
+    }
+    
     @IBAction func previewsBtnWasPressed(_ sender: Any) {
         
         dismiss(animated: true, completion: nil)
