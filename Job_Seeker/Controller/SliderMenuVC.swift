@@ -19,8 +19,6 @@ class SliderMenuVC: UIViewController {
         tableView.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.width/2 + 30
     }
-
-  
 }
 
 extension SliderMenuVC : UITableViewDelegate, UITableViewDataSource {

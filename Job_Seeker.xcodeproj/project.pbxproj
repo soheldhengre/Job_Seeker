@@ -17,6 +17,12 @@
 		7DD0A3C0202043FC006084F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BE202043FC006084F4 /* LaunchScreen.storyboard */; };
 		7DE943EB2020557C00B6D384 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE943EA2020557C00B6D384 /* Main.storyboard */; };
 		7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE943F420207EE700B6D384 /* SWRevealViewController.m */; };
+		E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38720219577004DE17C /* RegisterScreenVC.swift */; };
+		E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE3892021A29A004DE17C /* InsetTxtField.swift */; };
+		E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */; };
+		E9BAE38E2021A600004DE17C /* CompanyDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAE38C2021A5FF004DE17C /* CompanyDetailsVC.xib */; };
+		E9BAE3912021BBB9004DE17C /* CompanyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */; };
+		E9BAE3922021BBB9004DE17C /* CompanyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */; };
 		E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +43,12 @@
 		7DE943F420207EE700B6D384 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		96A3DC413A9478F0359DF95D /* Pods-Job_Seeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Job_Seeker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Job_Seeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9BAE38720219577004DE17C /* RegisterScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenVC.swift; sourceTree = "<group>"; };
+		E9BAE3892021A29A004DE17C /* InsetTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTxtField.swift; sourceTree = "<group>"; };
+		E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailsVC.swift; sourceTree = "<group>"; };
+		E9BAE38C2021A5FF004DE17C /* CompanyDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyDetailsVC.xib; sourceTree = "<group>"; };
+		E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileVC.swift; sourceTree = "<group>"; };
+		E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyProfileVC.xib; sourceTree = "<group>"; };
 		E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +85,7 @@
 		7DD0A3B4202043FC006084F4 /* Job_Seeker */ = {
 			isa = PBXGroup;
 			children = (
+				E9BAE38620219457004DE17C /* XIBs */,
 				E96C0E0020204F3700A90543 /* Supporting File */,
 				E96C0DFF20204F3100A90543 /* View */,
 				E96C0DFE20204F2900A90543 /* Model */,
@@ -108,6 +121,9 @@
 			children = (
 				7DD0A3B7202043FC006084F4 /* ViewController.swift */,
 				7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */,
+				E9BAE38720219577004DE17C /* RegisterScreenVC.swift */,
+				E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */,
+				E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -125,6 +141,7 @@
 				E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */,
 				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
 				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
+				E9BAE3892021A29A004DE17C /* InsetTxtField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +154,15 @@
 				7DE943F320207EE600B6D384 /* Job_Seeker-Bridging-Header.h */,
 			);
 			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		E9BAE38620219457004DE17C /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				E9BAE38C2021A5FF004DE17C /* CompanyDetailsVC.xib */,
+				E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +231,8 @@
 				7DD0A3C0202043FC006084F4 /* LaunchScreen.storyboard in Resources */,
 				7DD0A3BD202043FC006084F4 /* Assets.xcassets in Resources */,
 				7DE943EB2020557C00B6D384 /* Main.storyboard in Resources */,
+				E9BAE38E2021A600004DE17C /* CompanyDetailsVC.xib in Resources */,
+				E9BAE3922021BBB9004DE17C /* CompanyProfileVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,13 +301,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BAE3912021BBB9004DE17C /* CompanyProfileVC.swift in Sources */,
 				7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */,
+				E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */,
 				E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */,
 				7DD0A3B8202043FC006084F4 /* ViewController.swift in Sources */,
 				7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */,
+				E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
 				7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */,
 				7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */,
+				E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

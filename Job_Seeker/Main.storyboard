@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bn7-c9-7iN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lMo-b4-dxt">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,6 +13,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
             <string>Avenir-Heavy</string>
             <string>Avenir-Medium</string>
         </array>
@@ -206,7 +207,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtb-bd-fyx" customClass="GradientView" customModule="Flack" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jtb-bd-fyx" customClass="GradientView" customModule="Job_Seeker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLX-BU-Wg3">
@@ -377,6 +378,123 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1w-ne-j5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-388" y="615.51724137931035"/>
+        </scene>
+        <!--Register ScreenVC-->
+        <scene sceneID="1Ax-qf-XEW">
+            <objects>
+                <viewController storyboardIdentifier="RegisterScreenVC" id="lMo-b4-dxt" customClass="RegisterScreenVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HMQ-11-nde">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="GDZ-24-RBN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="D4H-aR-2Wd"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0Hv-cj-S08">
+                                <rect key="frame" x="147" y="44" width="80" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="I0U-HQ-IGz"/>
+                                    <constraint firstAttribute="width" constant="80" id="hbC-nJ-m3M"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8N-yI-wFg">
+                                <rect key="frame" x="0.0" y="108" width="375" height="128"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="aL2-1E-G45"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-XH-bis">
+                                <rect key="frame" x="10" y="256" width="355" height="180"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Company Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vI6-hP-Wek" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AqH-YQ-zTQ" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="355" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CAj-sZ-ZAM" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="355" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SSM Reg Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SbU-QG-ClE" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="150" width="355" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRX-PL-ubI">
+                                <rect key="frame" x="0.0" y="738" width="187" height="40"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.15686274509803921" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bDb-Of-5BV"/>
+                                    <constraint firstAttribute="width" constant="187" id="r44-Tq-NI3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Previews">
+                                    <color key="titleColor" red="0.69411764710000001" green="0.85098039219999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awr-z1-P0W">
+                                <rect key="frame" x="188" y="738" width="187" height="40"/>
+                                <color key="backgroundColor" red="0.11764705882352941" green="0.54509803921568623" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3aP-GV-8pS"/>
+                                    <constraint firstAttribute="width" constant="187" id="MRI-4I-bcc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextBtnWasPressed:" destination="lMo-b4-dxt" eventType="touchUpInside" id="zMP-pd-BLh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N8N-yI-wFg" firstAttribute="leading" secondItem="BVJ-iZ-uT4" secondAttribute="leading" id="5nx-GI-6C5"/>
+                            <constraint firstItem="awr-z1-P0W" firstAttribute="bottom" secondItem="BVJ-iZ-uT4" secondAttribute="bottom" id="7XB-VV-5tv"/>
+                            <constraint firstItem="GDZ-24-RBN" firstAttribute="leading" secondItem="BVJ-iZ-uT4" secondAttribute="leading" id="8vz-6W-QZy"/>
+                            <constraint firstItem="N8N-yI-wFg" firstAttribute="top" secondItem="GDZ-24-RBN" secondAttribute="bottom" constant="8" id="CS4-1R-v0Y"/>
+                            <constraint firstItem="N8N-yI-wFg" firstAttribute="trailing" secondItem="BVJ-iZ-uT4" secondAttribute="trailing" id="H2l-f7-rTV"/>
+                            <constraint firstItem="wRX-PL-ubI" firstAttribute="leading" secondItem="BVJ-iZ-uT4" secondAttribute="leading" id="Ujd-9D-SqN"/>
+                            <constraint firstItem="wRX-PL-ubI" firstAttribute="bottom" secondItem="BVJ-iZ-uT4" secondAttribute="bottom" id="XYI-1d-QPA"/>
+                            <constraint firstItem="1fh-XH-bis" firstAttribute="top" secondItem="N8N-yI-wFg" secondAttribute="bottom" constant="20" id="ZsS-1w-2Ys"/>
+                            <constraint firstItem="0Hv-cj-S08" firstAttribute="top" secondItem="BVJ-iZ-uT4" secondAttribute="top" id="Zun-s2-ESQ"/>
+                            <constraint firstItem="1fh-XH-bis" firstAttribute="leading" secondItem="BVJ-iZ-uT4" secondAttribute="leading" constant="10" id="agv-73-m9V"/>
+                            <constraint firstItem="GDZ-24-RBN" firstAttribute="top" secondItem="HMQ-11-nde" secondAttribute="top" id="ah8-VB-apw"/>
+                            <constraint firstItem="GDZ-24-RBN" firstAttribute="trailing" secondItem="BVJ-iZ-uT4" secondAttribute="trailing" id="h5V-TM-25s"/>
+                            <constraint firstItem="BVJ-iZ-uT4" firstAttribute="trailing" secondItem="1fh-XH-bis" secondAttribute="trailing" constant="10" id="hiF-sM-vsb"/>
+                            <constraint firstItem="awr-z1-P0W" firstAttribute="trailing" secondItem="BVJ-iZ-uT4" secondAttribute="trailing" id="o5o-p2-Tmu"/>
+                            <constraint firstItem="0Hv-cj-S08" firstAttribute="centerX" secondItem="HMQ-11-nde" secondAttribute="centerX" id="s2B-0K-WLR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BVJ-iZ-uT4"/>
+                    </view>
+                    <connections>
+                        <outlet property="nxtBtn" destination="awr-z1-P0W" id="IcX-fU-HYF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PuI-E0-TAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360.80000000000001" y="615.51724137931035"/>
         </scene>
     </scenes>
     <resources>
