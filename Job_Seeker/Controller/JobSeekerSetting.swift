@@ -10,15 +10,31 @@ import UIKit
 
 class JobSeekerSetting: UIViewController {
     
-    
+    var jobSeekerSetting = ["App Setting","Notification","Privacy Policy","Terms of use","Contact us","Logout"]
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         
        
     }
-
-
-
+}
+extension JobSeekerSetting:UITableViewDelegate,UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return jobSeekerSetting.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "JobSeekerSettingCell", for: indexPath) as? JobSeekerSettingCell else { return UITableViewCell() }
+        let setting = jobSeekerSetting[indexPath.row]
+        cell.settings(options: setting)
+    
+        return cell
+    }
+    
 }

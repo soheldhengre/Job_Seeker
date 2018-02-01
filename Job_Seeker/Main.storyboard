@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -576,21 +577,28 @@
                                 <rect key="frame" x="0.0" y="220" width="375" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="LBu-qq-9lV" customClass="JobSeekerSettingCell" customModule="Job_Seeker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobSeekerSettingCell" rowHeight="50" id="LBu-qq-9lV" customClass="JobSeekerSettingCell" customModule="Job_Seeker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LBu-qq-9lV" id="2Se-Py-ZtX">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="49.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-7H-HdM">
-                                                    <rect key="frame" x="15" y="14" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeD-7H-HdM">
+                                                    <rect key="frame" x="25" y="14" width="325" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="dmH-4c-kcx"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aeD-7H-HdM" firstAttribute="centerY" secondItem="2Se-Py-ZtX" secondAttribute="centerY" id="7xg-Pn-C08"/>
+                                                <constraint firstItem="aeD-7H-HdM" firstAttribute="centerX" secondItem="2Se-Py-ZtX" secondAttribute="centerX" id="BwC-Tl-tYQ"/>
+                                                <constraint firstItem="aeD-7H-HdM" firstAttribute="leading" secondItem="2Se-Py-ZtX" secondAttribute="leadingMargin" constant="10" id="tYr-CT-Y5B"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="optionLbl" destination="aeD-7H-HdM" id="H1s-CY-Yex"/>
@@ -656,6 +664,9 @@
                         <viewLayoutGuide key="safeArea" id="OxD-hy-Mwg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Planner" image="bookmark-1" id="8qr-Uf-M9q"/>
+                    <connections>
+                        <outlet property="menubtn" destination="p8g-sW-nxp" id="KRP-ce-mSP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leQ-Ce-FCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
