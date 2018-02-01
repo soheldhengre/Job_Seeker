@@ -12,7 +12,7 @@
 		7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */; };
 		7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */; };
 		7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B5202043FC006084F4 /* AppDelegate.swift */; };
-		7DD0A3B8202043FC006084F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B7202043FC006084F4 /* ViewController.swift */; };
+		7DD0A3B8202043FC006084F4 /* InterviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD0A3B7202043FC006084F4 /* InterviewVC.swift */; };
 		7DD0A3BD202043FC006084F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BC202043FC006084F4 /* Assets.xcassets */; };
 		7DD0A3C0202043FC006084F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DD0A3BE202043FC006084F4 /* LaunchScreen.storyboard */; };
 		7DDD444820221CDF003E5799 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD444720221CDF003E5799 /* ProfileVC.swift */; };
@@ -39,7 +39,7 @@
 		7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMenuCell.swift; sourceTree = "<group>"; };
 		7DD0A3B2202043FC006084F4 /* Job_Seeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Job_Seeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DD0A3B5202043FC006084F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7DD0A3B7202043FC006084F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DD0A3B7202043FC006084F4 /* InterviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewVC.swift; sourceTree = "<group>"; };
 		7DD0A3BC202043FC006084F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DD0A3BF202043FC006084F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DD0A3C1202043FC006084F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D9DFA6D20230B660083D586 /* Controller1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DDD444720221CDF003E5799 /* ProfileVC.swift */,
+				7DD0A3B7202043FC006084F4 /* InterviewVC.swift */,
+			);
+			path = Controller1;
+			sourceTree = "<group>";
+		};
 		7DD0A3A9202043FC006084F4 = {
 			isa = PBXGroup;
 			children = (
@@ -132,16 +141,15 @@
 		E96C0DFD20204F1D00A90543 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7DD0A3B7202043FC006084F4 /* ViewController.swift */,
 				7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */,
 				E9BAE38720219577004DE17C /* RegisterScreenVC.swift */,
 				E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */,
 				E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */,
-				7DDD444720221CDF003E5799 /* ProfileVC.swift */,
 				E93DA3BD2022F0E1006C6D35 /* EmployerLoginVC.swift */,
 				E93DA3BF2022F11B006C6D35 /* JobSeekerLoginVC.swift */,
 				E93DA3C12022F322006C6D35 /* LoginVC.swift */,
 				E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */,
+				7D9DFA6D20230B660083D586 /* Controller1 */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -326,7 +334,7 @@
 				7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */,
 				E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */,
 				E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */,
-				7DD0A3B8202043FC006084F4 /* ViewController.swift in Sources */,
+				7DD0A3B8202043FC006084F4 /* InterviewVC.swift in Sources */,
 				7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */,
 				E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,

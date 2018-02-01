@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InterviewVC: UIViewController {
 
     @IBOutlet weak var menuBtn: UIButton!
     override func viewDidLoad() {

@@ -100,7 +100,7 @@
         <!--Item 2-->
         <scene sceneID="elf-Jc-9l1">
             <objects>
-                <viewController id="oIb-IU-jx6" customClass="ProfileVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oIb-IU-jx6" customClass="InterviewVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fPq-4d-kR1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -203,7 +203,7 @@
         <!--Item 1-->
         <scene sceneID="hWx-5s-taP">
             <objects>
-                <viewController id="L8X-47-COU" customClass="ViewController" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="L8X-47-COU" customClass="ProfileVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mVw-PC-MEl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
