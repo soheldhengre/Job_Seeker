@@ -148,7 +148,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLo-6H-JGv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2236" y="2181"/>
+            <point key="canvasLocation" x="2020" y="2475"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="SF8-5L-9mr">
+            <objects>
+                <viewController id="x8p-Ep-0iV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wD8-4i-30C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SlS-Z7-t6j" customClass="GradientView" customModule="Job_Seeker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSi-IG-Gp3">
+                                        <rect key="frame" x="12" y="48" width="24" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="KlL-3a-RGa"/>
+                                            <constraint firstAttribute="width" constant="24" id="jYV-ey-9rc"/>
+                                        </constraints>
+                                        <state key="normal" image="nave_icon"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lT-OC-eG6">
+                                        <rect key="frame" x="166.66666666666666" y="44.666666666666664" width="42.333333333333343" height="23.999999999999993"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1lT-OC-eG6" firstAttribute="centerY" secondItem="DSi-IG-Gp3" secondAttribute="centerY" id="JId-mY-pWa"/>
+                                    <constraint firstItem="DSi-IG-Gp3" firstAttribute="leading" secondItem="SlS-Z7-t6j" secondAttribute="leading" constant="12" id="Mwu-bY-QRl"/>
+                                    <constraint firstItem="1lT-OC-eG6" firstAttribute="centerX" secondItem="SlS-Z7-t6j" secondAttribute="centerX" id="cee-qZ-eeF"/>
+                                    <constraint firstAttribute="bottom" secondItem="DSi-IG-Gp3" secondAttribute="bottom" constant="12" id="hHe-o5-61L"/>
+                                    <constraint firstAttribute="height" constant="77" id="yJW-ju-hii"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SlS-Z7-t6j" firstAttribute="leading" secondItem="8cq-8d-8qc" secondAttribute="leading" id="8He-d8-OEW"/>
+                            <constraint firstItem="SlS-Z7-t6j" firstAttribute="trailing" secondItem="8cq-8d-8qc" secondAttribute="trailing" id="Us0-Xh-HOs"/>
+                            <constraint firstItem="SlS-Z7-t6j" firstAttribute="top" secondItem="wD8-4i-30C" secondAttribute="top" id="seA-aG-50D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8cq-8d-8qc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="1uo-Uf-uxT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OGt-QG-pbz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="2084"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="hWx-5s-taP">
@@ -201,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldW-PZ-yAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2020" y="1533"/>
+            <point key="canvasLocation" x="2020" y="1720"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1nc-tG-zfz">
@@ -215,6 +265,7 @@
                     <connections>
                         <segue destination="L8X-47-COU" kind="relationship" relationship="viewControllers" id="gTJ-4h-30A"/>
                         <segue destination="oIb-IU-jx6" kind="relationship" relationship="viewControllers" id="0Tu-iF-mph"/>
+                        <segue destination="x8p-Ep-0iV" kind="relationship" relationship="viewControllers" id="yE0-qU-MqS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KC4-eq-zPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
