@@ -26,6 +26,9 @@
 		E93DA3C22022F322006C6D35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93DA3C12022F322006C6D35 /* LoginVC.swift */; };
 		E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */; };
 		E9A2563F202316AC000AC795 /* JobSeekerSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */; };
+		E9A25641202318EC000AC795 /* JobSeekerSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A25640202318EC000AC795 /* JobSeekerSettingCell.swift */; };
+		E9A2564320231C37000AC795 /* JobsNearMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2564220231C37000AC795 /* JobsNearMe.swift */; };
+		E9A2564520231C5C000AC795 /* PlannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2564420231C5C000AC795 /* PlannerVC.swift */; };
 		E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38720219577004DE17C /* RegisterScreenVC.swift */; };
 		E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE3892021A29A004DE17C /* InsetTxtField.swift */; };
 		E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */; };
@@ -61,6 +64,9 @@
 		E93DA3C12022F322006C6D35 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerRegisterVC.swift; sourceTree = "<group>"; };
 		E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerSetting.swift; sourceTree = "<group>"; };
+		E9A25640202318EC000AC795 /* JobSeekerSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerSettingCell.swift; sourceTree = "<group>"; };
+		E9A2564220231C37000AC795 /* JobsNearMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsNearMe.swift; sourceTree = "<group>"; };
+		E9A2564420231C5C000AC795 /* PlannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerVC.swift; sourceTree = "<group>"; };
 		E9BAE38720219577004DE17C /* RegisterScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenVC.swift; sourceTree = "<group>"; };
 		E9BAE3892021A29A004DE17C /* InsetTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTxtField.swift; sourceTree = "<group>"; };
 		E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailsVC.swift; sourceTree = "<group>"; };
@@ -157,7 +163,9 @@
 				E93DA3BF2022F11B006C6D35 /* JobSeekerLoginVC.swift */,
 				E93DA3C12022F322006C6D35 /* LoginVC.swift */,
 				E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */,
+				E9A2564220231C37000AC795 /* JobsNearMe.swift */,
 				E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */,
+				E9A2564420231C5C000AC795 /* PlannerVC.swift */,
 				7D9DFA6D20230B660083D586 /* Controller1 */,
 			);
 			path = Controller;
@@ -177,6 +185,7 @@
 				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
 				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
 				E9BAE3892021A29A004DE17C /* InsetTxtField.swift */,
+				E9A25640202318EC000AC795 /* JobSeekerSettingCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,9 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DDD444820221CDF003E5799 /* ProfileVC.swift in Sources */,
+				E9A25641202318EC000AC795 /* JobSeekerSettingCell.swift in Sources */,
 				E93DA3C02022F11B006C6D35 /* JobSeekerLoginVC.swift in Sources */,
 				E9BAE3912021BBB9004DE17C /* CompanyProfileVC.swift in Sources */,
 				7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */,
+				E9A2564320231C37000AC795 /* JobsNearMe.swift in Sources */,
 				7D9DFA7120230F6E0083D586 /* JobSearchVC.swift in Sources */,
 				E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */,
 				E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */,
@@ -354,6 +365,7 @@
 				E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */,
 				7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */,
 				7D9DFA6F20230F590083D586 /* InboxVC.swift in Sources */,
+				E9A2564520231C5C000AC795 /* PlannerVC.swift in Sources */,
 				E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */,
 				E93DA3C22022F322006C6D35 /* LoginVC.swift in Sources */,
 			);

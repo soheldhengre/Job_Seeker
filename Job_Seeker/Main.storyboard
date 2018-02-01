@@ -524,10 +524,10 @@
             </objects>
             <point key="canvasLocation" x="1522" y="1476"/>
         </scene>
-        <!--View Controller-->
+        <!--Job Seeker Setting-->
         <scene sceneID="UnW-iN-AKN">
             <objects>
-                <viewController id="ZqH-pB-rgB" sceneMemberID="viewController">
+                <viewController id="ZqH-pB-rgB" customClass="JobSeekerSetting" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WOT-bQ-LAx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -543,11 +543,11 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="example@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8O-nb-gYd">
-                                        <rect key="frame" x="100" y="70" width="168" height="28"/>
+                                        <rect key="frame" x="100.00000000000001" y="70" width="149.33333333333337" height="28"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="6EH-xy-8lY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -576,7 +576,7 @@
                                 <rect key="frame" x="0.0" y="220" width="375" height="592"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="LBu-qq-9lV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="LBu-qq-9lV" customClass="JobSeekerSettingCell" customModule="Job_Seeker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LBu-qq-9lV" id="2Se-Py-ZtX">
@@ -592,6 +592,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="optionLbl" destination="aeD-7H-HdM" id="H1s-CY-Yex"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -608,6 +611,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ENc-Fm-8NU"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="LsO-ja-ftB" id="lNs-We-hfV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FIe-8y-Fof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -616,7 +622,7 @@
         <!--Planner-->
         <scene sceneID="p6m-YP-phm">
             <objects>
-                <viewController id="O2A-A8-JNb" sceneMemberID="viewController">
+                <viewController id="O2A-A8-JNb" customClass="PlannerVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xT8-kp-pLf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -625,10 +631,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8g-sW-nxp">
-                                        <rect key="frame" x="8" y="46" width="28" height="26"/>
+                                        <rect key="frame" x="8" y="52" width="28" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="28" id="3MP-BR-BIb"/>
-                                            <constraint firstAttribute="height" constant="26" id="LCu-Fj-G3u"/>
+                                            <constraint firstAttribute="height" constant="20" id="LCu-Fj-G3u"/>
                                         </constraints>
                                         <state key="normal" image="nave_icon"/>
                                     </button>
@@ -658,7 +664,7 @@
         <!--Job Near Me-->
         <scene sceneID="U3I-ff-bHk">
             <objects>
-                <viewController id="m2y-6p-W1n" sceneMemberID="viewController">
+                <viewController id="m2y-6p-W1n" customClass="JobsNearMe" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ds-hN-oyd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -667,19 +673,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1v-F1-9lC">
-                                        <rect key="frame" x="8" y="46" width="28" height="26"/>
+                                        <rect key="frame" x="8" y="52" width="28" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="28" id="ITU-H1-vpS"/>
-                                            <constraint firstAttribute="height" constant="26" id="V8q-vx-9p9"/>
+                                            <constraint firstAttribute="height" constant="20" id="WFZ-vF-UhD"/>
+                                            <constraint firstAttribute="width" constant="28" id="yLa-ix-4XK"/>
                                         </constraints>
                                         <state key="normal" image="nave_icon"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.078431372549019607" green="0.15686274509803921" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="B1v-F1-9lC" firstAttribute="leading" secondItem="rg2-7G-d5a" secondAttribute="leading" constant="8" id="0E7-wT-WJ2"/>
                                     <constraint firstAttribute="height" constant="80" id="Br8-rf-Pcv"/>
-                                    <constraint firstAttribute="bottom" secondItem="B1v-F1-9lC" secondAttribute="bottom" constant="8" id="Jou-bZ-vr8"/>
+                                    <constraint firstAttribute="bottom" secondItem="B1v-F1-9lC" secondAttribute="bottom" constant="8" id="Iyo-hk-y30"/>
+                                    <constraint firstItem="B1v-F1-9lC" firstAttribute="leading" secondItem="rg2-7G-d5a" secondAttribute="leading" constant="8" id="cfS-Zd-AS9"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -692,6 +698,9 @@
                         <viewLayoutGuide key="safeArea" id="dAd-3z-VAQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Job Near Me" image="map-pin" id="voC-sR-qet"/>
+                    <connections>
+                        <outlet property="menuBtn" destination="B1v-F1-9lC" id="92S-QC-tp3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xDp-DP-z31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
