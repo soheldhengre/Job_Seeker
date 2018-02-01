@@ -25,6 +25,7 @@
 		E93DA3C02022F11B006C6D35 /* JobSeekerLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93DA3BF2022F11B006C6D35 /* JobSeekerLoginVC.swift */; };
 		E93DA3C22022F322006C6D35 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93DA3C12022F322006C6D35 /* LoginVC.swift */; };
 		E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */; };
+		E9A2563F202316AC000AC795 /* JobSeekerSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */; };
 		E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38720219577004DE17C /* RegisterScreenVC.swift */; };
 		E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE3892021A29A004DE17C /* InsetTxtField.swift */; };
 		E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */; };
@@ -59,6 +60,7 @@
 		E93DA3BF2022F11B006C6D35 /* JobSeekerLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerLoginVC.swift; sourceTree = "<group>"; };
 		E93DA3C12022F322006C6D35 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerRegisterVC.swift; sourceTree = "<group>"; };
+		E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerSetting.swift; sourceTree = "<group>"; };
 		E9BAE38720219577004DE17C /* RegisterScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenVC.swift; sourceTree = "<group>"; };
 		E9BAE3892021A29A004DE17C /* InsetTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTxtField.swift; sourceTree = "<group>"; };
 		E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailsVC.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				E93DA3BF2022F11B006C6D35 /* JobSeekerLoginVC.swift */,
 				E93DA3C12022F322006C6D35 /* LoginVC.swift */,
 				E93DA3C3202302B5006C6D35 /* JobSeekerRegisterVC.swift */,
+				E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */,
 				7D9DFA6D20230B660083D586 /* Controller1 */,
 			);
 			path = Controller;
@@ -347,6 +350,7 @@
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
 				7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */,
 				E93DA3BE2022F0E1006C6D35 /* EmployerLoginVC.swift in Sources */,
+				E9A2563F202316AC000AC795 /* JobSeekerSetting.swift in Sources */,
 				E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */,
 				7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */,
 				7D9DFA6F20230F590083D586 /* InboxVC.swift in Sources */,
