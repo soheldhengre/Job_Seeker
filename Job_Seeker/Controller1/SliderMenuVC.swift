@@ -39,12 +39,28 @@ extension SliderMenuVC : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var index = indexPath.row
+        let index = indexPath.row
         switch index {
         case 0:
-            performSegue(withIdentifier: "abc", sender: nil)
+            performSegue(withIdentifier: "toNotificationsVC", sender: nil)
+            UIView.animate(withDuration: 5){
+                self.revealViewController().revealToggle(animated: true)}
+        case 1:
+            performSegue(withIdentifier: "toManageJobsVC", sender: nil)
+            UIView.animate(withDuration: 5){
+                self.revealViewController().revealToggle(animated: true)}
+        case 2:
+            performSegue(withIdentifier: "toJobPostingVC", sender: nil)
+            UIView.animate(withDuration: 5){
+                self.revealViewController().revealToggle(animated: true)}
+        case 3:
+            performSegue(withIdentifier: "toPlansVC", sender: nil)
+            UIView.animate(withDuration: 5){
+                self.revealViewController().revealToggle(animated: true)}
         default:
-            performSegue(withIdentifier: "abc", sender: nil)
+            performSegue(withIdentifier: "toNotificationsVC", sender: nil)
+            UIView.animate(withDuration: 5){
+                self.revealViewController().revealToggle(animated: true)}
         }
     }
 }
