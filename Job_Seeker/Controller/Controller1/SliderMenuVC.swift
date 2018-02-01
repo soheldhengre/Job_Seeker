@@ -37,4 +37,14 @@ extension SliderMenuVC : UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(option: option)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var index = indexPath.row
+        switch index {
+        case 0:
+            performSegue(withIdentifier: "abc", sender: nil)
+        default:
+            performSegue(withIdentifier: "abc", sender: nil)
+        }
+    }
 }

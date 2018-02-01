@@ -10,6 +10,7 @@
 		38216BA674B72F2200EEC2DC /* Pods_Job_Seeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */; };
 		7D9DFA6F20230F590083D586 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DFA6E20230F590083D586 /* InboxVC.swift */; };
 		7D9DFA7120230F6E0083D586 /* JobSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DFA7020230F6E0083D586 /* JobSearchVC.swift */; };
+		7D9DFA7320231C2E0083D586 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DFA7220231C2E0083D586 /* NotificationsVC.swift */; };
 		7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB75AE2020C83100B67DCE /* CircleImage.swift */; };
 		7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */; };
 		7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */; };
@@ -39,6 +40,7 @@
 		42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Job_Seeker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker.release.xcconfig"; sourceTree = "<group>"; };
 		7D9DFA6E20230F590083D586 /* InboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
 		7D9DFA7020230F6E0083D586 /* JobSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchVC.swift; sourceTree = "<group>"; };
+		7D9DFA7220231C2E0083D586 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		7DCB75AE2020C83100B67DCE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMenuVC.swift; sourceTree = "<group>"; };
 		7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderMenuCell.swift; sourceTree = "<group>"; };
@@ -85,10 +87,12 @@
 		7D9DFA6D20230B660083D586 /* Controller1 */ = {
 			isa = PBXGroup;
 			children = (
+				7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */,
 				7DDD444720221CDF003E5799 /* ProfileVC.swift */,
 				7DD0A3B7202043FC006084F4 /* InterviewVC.swift */,
 				7D9DFA6E20230F590083D586 /* InboxVC.swift */,
 				7D9DFA7020230F6E0083D586 /* JobSearchVC.swift */,
+				7D9DFA7220231C2E0083D586 /* NotificationsVC.swift */,
 			);
 			path = Controller1;
 			sourceTree = "<group>";
@@ -149,7 +153,6 @@
 		E96C0DFD20204F1D00A90543 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7DCB75B02020C97900B67DCE /* SliderMenuVC.swift */,
 				E9BAE38720219577004DE17C /* RegisterScreenVC.swift */,
 				E9BAE38B2021A5FF004DE17C /* CompanyDetailsVC.swift */,
 				E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */,
@@ -348,6 +351,7 @@
 				7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */,
 				E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
+				7D9DFA7320231C2E0083D586 /* NotificationsVC.swift in Sources */,
 				7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */,
 				E93DA3BE2022F0E1006C6D35 /* EmployerLoginVC.swift in Sources */,
 				E9A2563F202316AC000AC795 /* JobSeekerSetting.swift in Sources */,
