@@ -10,15 +10,24 @@ import UIKit
 
 class JobPostingVC: UIViewController {
 
+    @IBOutlet var categories: [UIButton]!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
   
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func categorySelected(_ sender: Any) {
+        categories.forEach { (button) in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
     }
     
 }
