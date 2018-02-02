@@ -39,6 +39,8 @@
 		E9BAE38E2021A600004DE17C /* CompanyDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAE38C2021A5FF004DE17C /* CompanyDetailsVC.xib */; };
 		E9BAE3912021BBB9004DE17C /* CompanyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */; };
 		E9BAE3922021BBB9004DE17C /* CompanyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */; };
+		E9CF8CA0202436050024BA93 /* JobSeekerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF8C9F202436050024BA93 /* JobSeekerProfileVC.swift */; };
+		E9CF8CA2202439290024BA93 /* JobSeekerInboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */; };
 		E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		E9BAE38C2021A5FF004DE17C /* CompanyDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyDetailsVC.xib; sourceTree = "<group>"; };
 		E9BAE38F2021BBB9004DE17C /* CompanyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfileVC.swift; sourceTree = "<group>"; };
 		E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyProfileVC.xib; sourceTree = "<group>"; };
+		E9CF8C9F202436050024BA93 /* JobSeekerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerProfileVC.swift; sourceTree = "<group>"; };
+		E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerInboxVC.swift; sourceTree = "<group>"; };
 		E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +183,8 @@
 				E9A2564220231C37000AC795 /* JobsNearMe.swift */,
 				E9A2563E202316AC000AC795 /* JobSeekerSetting.swift */,
 				E9A2564420231C5C000AC795 /* PlannerVC.swift */,
+				E9CF8C9F202436050024BA93 /* JobSeekerProfileVC.swift */,
+				E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */,
 				7DD0A3B8202043FC006084F4 /* InterviewVC.swift in Sources */,
 				7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */,
+				E9CF8CA2202439290024BA93 /* JobSeekerInboxVC.swift in Sources */,
 				E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
 				7DBBF71420236F5D00F49FE4 /* ManageJobsVC.swift in Sources */,
@@ -377,6 +384,7 @@
 				7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */,
 				E93DA3BE2022F0E1006C6D35 /* EmployerLoginVC.swift in Sources */,
 				E9A2563F202316AC000AC795 /* JobSeekerSetting.swift in Sources */,
+				E9CF8CA0202436050024BA93 /* JobSeekerProfileVC.swift in Sources */,
 				7DBBF71820236F8400F49FE4 /* PlansVC.swift in Sources */,
 				E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */,
 				7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */,
