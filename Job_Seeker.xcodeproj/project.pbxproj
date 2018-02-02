@@ -151,6 +151,7 @@
 				E9BAE38620219457004DE17C /* XIBs */,
 				E96C0E0020204F3700A90543 /* Supporting File */,
 				E96C0DFF20204F3100A90543 /* View */,
+				7DFF378F2024D74900038066 /* View1 */,
 				E96C0DFE20204F2900A90543 /* Model */,
 				E96C0DFD20204F1D00A90543 /* Controller */,
 				7D9DFA6D20230B660083D586 /* Controller1 */,
@@ -162,6 +163,15 @@
 				7DD0A3C1202043FC006084F4 /* Info.plist */,
 			);
 			path = Job_Seeker;
+			sourceTree = "<group>";
+		};
+		7DFF378F2024D74900038066 /* View1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
+				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
+			);
+			path = View1;
 			sourceTree = "<group>";
 		};
 		A0719C175B54154D7546B161 /* Frameworks */ = {
@@ -211,12 +221,7 @@
 		E96C0DFF20204F3100A90543 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */,
-				E9BAE3892021A29A004DE17C /* InsetTxtField.swift */,
 				E9A25640202318EC000AC795 /* JobSeekerSettingCell.swift */,
-				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
-				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
-				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
 				E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */,
 				E9EA0B682024D1C100020AA4 /* abcd.swift */,
 			);
@@ -229,6 +234,9 @@
 				7DE943F220207EDB00B6D384 /* SWRevealViewController.h */,
 				7DE943F420207EE700B6D384 /* SWRevealViewController.m */,
 				7DE943F320207EE600B6D384 /* Job_Seeker-Bridging-Header.h */,
+				E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */,
+				E9BAE3892021A29A004DE17C /* InsetTxtField.swift */,
+				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
