@@ -104,6 +104,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D7B71AA2024720100DE4C5F /* View1 */ = {
+			isa = PBXGroup;
+			children = (
+				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
+				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
+				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
+			);
+			path = View1;
+			sourceTree = "<group>";
+		};
 		7D9DFA6D20230B660083D586 /* Controller1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 				E9BAE38620219457004DE17C /* XIBs */,
 				E96C0E0020204F3700A90543 /* Supporting File */,
 				E96C0DFF20204F3100A90543 /* View */,
+				7D7B71AA2024720100DE4C5F /* View1 */,
 				E96C0DFE20204F2900A90543 /* Model */,
 				E96C0DFD20204F1D00A90543 /* Controller */,
 				7D9DFA6D20230B660083D586 /* Controller1 */,
@@ -205,11 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */,
-				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
-				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
 				E9BAE3892021A29A004DE17C /* InsetTxtField.swift */,
 				E9A25640202318EC000AC795 /* JobSeekerSettingCell.swift */,
-				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
