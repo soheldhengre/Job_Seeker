@@ -43,6 +43,8 @@
 		E9BAE3922021BBB9004DE17C /* CompanyProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */; };
 		E9CF8CA0202436050024BA93 /* JobSeekerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF8C9F202436050024BA93 /* JobSeekerProfileVC.swift */; };
 		E9CF8CA2202439290024BA93 /* JobSeekerInboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */; };
+		E9EA0B652024CE8B00020AA4 /* ProfileDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA0B642024CE8B00020AA4 /* ProfileDetailsVC.swift */; };
+		E9EA0B672024CECD00020AA4 /* JobSeekerInboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */; };
 		E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		E9BAE3902021BBB9004DE17C /* CompanyProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompanyProfileVC.xib; sourceTree = "<group>"; };
 		E9CF8C9F202436050024BA93 /* JobSeekerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerProfileVC.swift; sourceTree = "<group>"; };
 		E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerInboxVC.swift; sourceTree = "<group>"; };
+		E9EA0B642024CE8B00020AA4 /* ProfileDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsVC.swift; sourceTree = "<group>"; };
+		E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSeekerInboxCell.swift; sourceTree = "<group>"; };
 		E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +194,7 @@
 				E9A2564420231C5C000AC795 /* PlannerVC.swift */,
 				E9CF8C9F202436050024BA93 /* JobSeekerProfileVC.swift */,
 				E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */,
+				E9EA0B642024CE8B00020AA4 /* ProfileDetailsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
 				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
 				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
+				E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +389,7 @@
 				E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */,
 				7DD0A3B8202043FC006084F4 /* InterviewVC.swift in Sources */,
 				7DCB75B12020C97900B67DCE /* SliderMenuVC.swift in Sources */,
+				E9EA0B672024CECD00020AA4 /* JobSeekerInboxCell.swift in Sources */,
 				E9CF8CA2202439290024BA93 /* JobSeekerInboxVC.swift in Sources */,
 				E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
@@ -396,6 +403,7 @@
 				E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */,
 				7D7B71A72024407D00DE4C5F /* JobDetailsVC.swift in Sources */,
 				7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */,
+				E9EA0B652024CE8B00020AA4 /* ProfileDetailsVC.swift in Sources */,
 				7D9DFA6F20230F590083D586 /* InboxVC.swift in Sources */,
 				E9A2564520231C5C000AC795 /* PlannerVC.swift in Sources */,
 				E9BAE38820219577004DE17C /* RegisterScreenVC.swift in Sources */,
@@ -554,6 +562,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Nick.Job-Seeker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Job_Seeker/Supporting File/Job_Seeker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
