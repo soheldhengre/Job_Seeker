@@ -45,6 +45,7 @@
 		E9CF8CA2202439290024BA93 /* JobSeekerInboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */; };
 		E9EA0B652024CE8B00020AA4 /* ProfileDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA0B642024CE8B00020AA4 /* ProfileDetailsVC.swift */; };
 		E9EA0B672024CECD00020AA4 /* JobSeekerInboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */; };
+		E9EA0B692024D1C100020AA4 /* abcd.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EA0B682024D1C100020AA4 /* abcd.swift */; };
 		E9F22BB7202068D600B2CBF7 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		E9CF8CA1202439290024BA93 /* JobSeekerInboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSeekerInboxVC.swift; sourceTree = "<group>"; };
 		E9EA0B642024CE8B00020AA4 /* ProfileDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailsVC.swift; sourceTree = "<group>"; };
 		E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobSeekerInboxCell.swift; sourceTree = "<group>"; };
+		E9EA0B682024D1C100020AA4 /* abcd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abcd.swift; sourceTree = "<group>"; };
 		E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
 				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
 				E9EA0B662024CECD00020AA4 /* JobSeekerInboxCell.swift */,
+				E9EA0B682024D1C100020AA4 /* abcd.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */,
 				E9A2564320231C37000AC795 /* JobsNearMe.swift in Sources */,
 				7D7B71A92024561200DE4C5F /* ManageJobCell.swift in Sources */,
+				E9EA0B692024D1C100020AA4 /* abcd.swift in Sources */,
 				7DBBF71620236F7500F49FE4 /* JobPostingVC.swift in Sources */,
 				7D9DFA7120230F6E0083D586 /* JobSearchVC.swift in Sources */,
 				E9BAE38D2021A600004DE17C /* CompanyDetailsVC.swift in Sources */,
