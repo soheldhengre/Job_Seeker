@@ -99,10 +99,6 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="JVm-H1-fe7" id="bUY-u0-5xe"/>
-                        <segue destination="Q21-Ve-d2I" kind="show" identifier="toNotificationsVC" id="bMj-jO-Uyb"/>
-                        <segue destination="S8s-Vg-gXx" kind="show" identifier="toManageJobsVC" id="1kd-cX-TKZ"/>
-                        <segue destination="Ybv-t1-atw" kind="show" identifier="toJobPostingVC" id="hkN-Wn-wkg"/>
-                        <segue destination="5KM-fH-HWR" kind="show" identifier="toPlansVC" id="c9W-96-OnG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MgS-qc-dCk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,7 +108,7 @@
         <!--NotificationsVC-->
         <scene sceneID="b2w-y1-uQn">
             <objects>
-                <viewController id="Q21-Ve-d2I" customClass="NotificationsVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toNotificationsVC" id="Q21-Ve-d2I" customClass="NotificationsVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fO4-CQ-fqo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,7 +170,7 @@
         <!--Manage JobsVC-->
         <scene sceneID="I3M-w0-15K">
             <objects>
-                <viewController id="S8s-Vg-gXx" customClass="ManageJobsVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toManageJobsVC" id="S8s-Vg-gXx" customClass="ManageJobsVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fqV-ub-IkA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,7 +333,7 @@
         <!--Job PostingVC-->
         <scene sceneID="E0p-td-QxT">
             <objects>
-                <viewController id="Ybv-t1-atw" customClass="JobPostingVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toJobPostingVC" id="Ybv-t1-atw" customClass="JobPostingVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O1a-we-DF4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -486,7 +482,7 @@
         <!--PlansVC-->
         <scene sceneID="dfG-if-929">
             <objects>
-                <viewController id="5KM-fH-HWR" customClass="PlansVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="toPlansVC" id="5KM-fH-HWR" customClass="PlansVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ME-2L-20L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -847,6 +843,59 @@
             </objects>
             <point key="canvasLocation" x="2796" y="2083.7438423645322"/>
         </scene>
+        <!--Employer ChatVC-->
+        <scene sceneID="ZIM-SR-0QV">
+            <objects>
+                <viewController storyboardIdentifier="employerChatVC" id="xV1-wg-czH" customClass="EmployerChatVC" customModule="Job_Seeker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wG5-67-k7L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-EV-GLz" customClass="GradientView" customModule="Job_Seeker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruy-9W-8qV">
+                                        <rect key="frame" x="12" y="48" width="24" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="2gN-Qo-q6K"/>
+                                            <constraint firstAttribute="width" constant="24" id="Lw6-u7-chV"/>
+                                        </constraints>
+                                        <state key="normal" image="back_arrow"/>
+                                        <connections>
+                                            <action selector="backPressed:" destination="5KM-fH-HWR" eventType="touchUpInside" id="Twk-cO-olu"/>
+                                            <action selector="backPressed:" destination="xV1-wg-czH" eventType="touchUpInside" id="hhu-4K-z3r"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scO-Mq-YmM">
+                                        <rect key="frame" x="119.66666666666669" y="44.666666666666664" width="136" height="23.999999999999993"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="scO-Mq-YmM" firstAttribute="centerY" secondItem="ruy-9W-8qV" secondAttribute="centerY" id="9zj-sz-ggf"/>
+                                    <constraint firstItem="scO-Mq-YmM" firstAttribute="centerX" secondItem="ygO-EV-GLz" secondAttribute="centerX" id="GFv-e7-Zc5"/>
+                                    <constraint firstAttribute="height" constant="77" id="SS1-eI-6Cf"/>
+                                    <constraint firstItem="ruy-9W-8qV" firstAttribute="leading" secondItem="ygO-EV-GLz" secondAttribute="leading" constant="12" id="XJK-RL-86p"/>
+                                    <constraint firstAttribute="bottom" secondItem="ruy-9W-8qV" secondAttribute="bottom" constant="12" id="lIW-Bl-f2W"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ygO-EV-GLz" firstAttribute="top" secondItem="wG5-67-k7L" secondAttribute="top" id="L7Q-GD-PGb"/>
+                            <constraint firstItem="ygO-EV-GLz" firstAttribute="leading" secondItem="Mva-CE-an7" secondAttribute="leading" id="cc5-4M-Srz"/>
+                            <constraint firstItem="ygO-EV-GLz" firstAttribute="trailing" secondItem="Mva-CE-an7" secondAttribute="trailing" id="vum-it-GLQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mva-CE-an7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BiD-pN-NYQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3507" y="2083"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="hWx-5s-taP">
             <objects>
@@ -890,8 +939,8 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A0b-7G-iGU">
-                                <rect key="frame" x="16" y="292" width="343" height="397"/>
-                                <mutableString key="text">sdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjh sdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjh</mutableString>
+                                <rect key="frame" x="20" y="292" width="335" height="397"/>
+                                <string key="text">sdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjh sdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjhsdhfjhdsjhf fjsdhjfhsjdhfjh kjsdjhfjshf sjhdfjhsdbf fjhsdjh</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -901,13 +950,13 @@
                         <constraints>
                             <constraint firstItem="A0b-7G-iGU" firstAttribute="top" secondItem="o3N-A7-BEf" secondAttribute="bottom" constant="40" id="6j2-R6-Y3t"/>
                             <constraint firstItem="9jm-dG-nSO" firstAttribute="bottom" secondItem="A0b-7G-iGU" secondAttribute="bottom" constant="40" id="9VM-yX-vuF"/>
-                            <constraint firstItem="A0b-7G-iGU" firstAttribute="leading" secondItem="9jm-dG-nSO" secondAttribute="leading" constant="16" id="KtO-XE-d7K"/>
+                            <constraint firstItem="A0b-7G-iGU" firstAttribute="leading" secondItem="9jm-dG-nSO" secondAttribute="leading" constant="20" id="KtO-XE-d7K"/>
                             <constraint firstItem="o3N-A7-BEf" firstAttribute="top" secondItem="cbN-dK-QxI" secondAttribute="bottom" constant="35" id="Mvn-yI-cDr"/>
                             <constraint firstItem="cbN-dK-QxI" firstAttribute="leading" secondItem="9jm-dG-nSO" secondAttribute="leading" id="ZfZ-q1-Rvw"/>
                             <constraint firstItem="cbN-dK-QxI" firstAttribute="top" secondItem="mVw-PC-MEl" secondAttribute="top" id="kmc-Uq-iJs"/>
                             <constraint firstItem="cbN-dK-QxI" firstAttribute="trailing" secondItem="9jm-dG-nSO" secondAttribute="trailing" id="mHn-hu-jMZ"/>
                             <constraint firstItem="o3N-A7-BEf" firstAttribute="centerX" secondItem="mVw-PC-MEl" secondAttribute="centerX" id="pzg-0O-gMC"/>
-                            <constraint firstItem="9jm-dG-nSO" firstAttribute="trailing" secondItem="A0b-7G-iGU" secondAttribute="trailing" constant="16" id="ySn-jY-TL5"/>
+                            <constraint firstItem="9jm-dG-nSO" firstAttribute="trailing" secondItem="A0b-7G-iGU" secondAttribute="trailing" constant="20" id="ySn-jY-TL5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9jm-dG-nSO"/>
                     </view>

@@ -11,6 +11,8 @@
 		7D7B71A72024407D00DE4C5F /* JobDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B71A62024407D00DE4C5F /* JobDetailsVC.swift */; };
 		7D7B71A92024561200DE4C5F /* ManageJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B71A82024561200DE4C5F /* ManageJobCell.swift */; };
 		7D8BD279202830E800C40862 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BD278202830E800C40862 /* InboxCell.swift */; };
+		7D8BD27B2028541F00C40862 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BD27A2028541F00C40862 /* UIViewControllerExt.swift */; };
+		7D8BD27D2028600000C40862 /* EmployerChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BD27C2028600000C40862 /* EmployerChatVC.swift */; };
 		7D9DFA6F20230F590083D586 /* InboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DFA6E20230F590083D586 /* InboxVC.swift */; };
 		7D9DFA7120230F6E0083D586 /* JobSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DFA7020230F6E0083D586 /* JobSearchVC.swift */; };
 		7D9DFA7320231C2E0083D586 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9DFA7220231C2E0083D586 /* NotificationsVC.swift */; };
@@ -55,6 +57,8 @@
 		7D7B71A62024407D00DE4C5F /* JobDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsVC.swift; sourceTree = "<group>"; };
 		7D7B71A82024561200DE4C5F /* ManageJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageJobCell.swift; sourceTree = "<group>"; };
 		7D8BD278202830E800C40862 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
+		7D8BD27A2028541F00C40862 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
+		7D8BD27C2028600000C40862 /* EmployerChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerChatVC.swift; sourceTree = "<group>"; };
 		7D9DFA6E20230F590083D586 /* InboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxVC.swift; sourceTree = "<group>"; };
 		7D9DFA7020230F6E0083D586 /* JobSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobSearchVC.swift; sourceTree = "<group>"; };
 		7D9DFA7220231C2E0083D586 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				7DBBF71520236F7500F49FE4 /* JobPostingVC.swift */,
 				7DBBF71720236F8400F49FE4 /* PlansVC.swift */,
 				7D7B71A62024407D00DE4C5F /* JobDetailsVC.swift */,
+				7D8BD27C2028600000C40862 /* EmployerChatVC.swift */,
 			);
 			path = Controller1;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				E9F22BB6202068D600B2CBF7 /* RoundedCorner.swift */,
 				E9BAE3892021A29A004DE17C /* InsetTxtField.swift */,
 				7DCB75AE2020C83100B67DCE /* CircleImage.swift */,
+				7D8BD27A2028541F00C40862 /* UIViewControllerExt.swift */,
 			);
 			path = "Supporting File";
 			sourceTree = "<group>";
@@ -395,6 +401,7 @@
 				E93DA3C02022F11B006C6D35 /* JobSeekerLoginVC.swift in Sources */,
 				E9BAE3912021BBB9004DE17C /* CompanyProfileVC.swift in Sources */,
 				7D8BD279202830E800C40862 /* InboxCell.swift in Sources */,
+				7D8BD27B2028541F00C40862 /* UIViewControllerExt.swift in Sources */,
 				7DCB75B32020CA7900B67DCE /* SliderMenuCell.swift in Sources */,
 				E9A2564320231C37000AC795 /* JobsNearMe.swift in Sources */,
 				7D7B71A92024561200DE4C5F /* ManageJobCell.swift in Sources */,
@@ -410,6 +417,7 @@
 				E9BAE38A2021A29A004DE17C /* InsetTxtField.swift in Sources */,
 				7DD0A3B6202043FC006084F4 /* AppDelegate.swift in Sources */,
 				7DBBF71420236F5D00F49FE4 /* ManageJobsVC.swift in Sources */,
+				7D8BD27D2028600000C40862 /* EmployerChatVC.swift in Sources */,
 				7D9DFA7320231C2E0083D586 /* NotificationsVC.swift in Sources */,
 				7DE943F520207EE700B6D384 /* SWRevealViewController.m in Sources */,
 				E93DA3BE2022F0E1006C6D35 /* EmployerLoginVC.swift in Sources */,
