@@ -18,7 +18,7 @@ class JobPostingVC: UIViewController {
 
   
     @IBAction func backPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        DismissVC()
     }
     
     @IBAction func categorySelected(_ sender: Any) {

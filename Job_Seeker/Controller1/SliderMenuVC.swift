@@ -10,7 +10,7 @@ import UIKit
 
 class SliderMenuVC: UIViewController {
 
-    var sliderMenuOptions = ["Notification", "Manage Jobs", "Post a Job", "Paid Plans", "Logout" ]
+    var sliderMenuOptions = ["Notification", "Manage Jobs", "Post a Job", "Paid Plans", "Logout"]
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -42,24 +42,30 @@ extension SliderMenuVC : UITableViewDelegate, UITableViewDataSource {
         let index = indexPath.row
         switch index {
         case 0:
-            performSegue(withIdentifier: "toNotificationsVC", sender: nil)
-            UIView.animate(withDuration: 5){
+            guard let VC = storyboard?.instantiateViewController(withIdentifier: "toNotificationsVC") as? NotificationsVC else {return}
+            presentVC(VC)
+            
+            UIView.animate(withDuration: 0.9){
                 self.revealViewController().revealToggle(animated: true)}
         case 1:
-            performSegue(withIdentifier: "toManageJobsVC", sender: nil)
-            UIView.animate(withDuration: 5){
+            guard let VC = storyboard?.instantiateViewController(withIdentifier: "toManageJobsVC") as? ManageJobsVC else {return}
+            presentVC(VC)
+            UIView.animate(withDuration: 0.9){
                 self.revealViewController().revealToggle(animated: true)}
         case 2:
-            performSegue(withIdentifier: "toJobPostingVC", sender: nil)
-            UIView.animate(withDuration: 5){
+            guard let VC = storyboard?.instantiateViewController(withIdentifier: "toJobPostingVC") as? JobPostingVC else {return}
+            presentVC(VC)
+            UIView.animate(withDuration: 0.9){
                 self.revealViewController().revealToggle(animated: true)}
         case 3:
-            performSegue(withIdentifier: "toPlansVC", sender: nil)
-            UIView.animate(withDuration: 5){
+            guard let VC = storyboard?.instantiateViewController(withIdentifier: "toPlansVC") as? PlansVC else {return}
+            presentVC(VC)
+            UIView.animate(withDuration: 0.9){
                 self.revealViewController().revealToggle(animated: true)}
         default:
-            performSegue(withIdentifier: "toNotificationsVC", sender: nil)
-            UIView.animate(withDuration: 5){
+            guard let VC = storyboard?.instantiateViewController(withIdentifier: "toPlansVC") as? PlansVC else {return}
+            presentVC(VC)
+            UIView.animate(withDuration: 0.9){
                 self.revealViewController().revealToggle(animated: true)}
         }
     }

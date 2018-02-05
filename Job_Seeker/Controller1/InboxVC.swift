@@ -44,6 +44,11 @@ extension InboxVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(userName: userName[indexPath.row], jobTitle: jobTitle[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let VC = storyboard?.instantiateViewController(withIdentifier: "employerChatVC") as? EmployerChatVC else {return}
+        presentVC(VC)
+    }
 }
 
 
