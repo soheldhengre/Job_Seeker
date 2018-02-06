@@ -10,14 +10,34 @@ import UIKit
 
 class EmployerChatVC: UIViewController {
 
+    var MessageArray = ["hey guys", "hola amigos", "hi"]
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
 
     
     @IBAction func backPressed(_ sender: Any) {
         DismissVC()
+    }
+}
+
+extension EmployerChatVC: UITableViewDelegate, UITableViewDataSource{
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "employerChatVC", for: indexPath) as? EmployerChatCell else {return UITableViewCell()}
+        cell.configureCell(message: MessageArray[indexPath.row])
+        return cell
     }
 }

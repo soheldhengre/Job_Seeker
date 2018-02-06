@@ -17,4 +17,7 @@ class JobDetailsVC: UIViewController {
     }
 
     
+    @IBAction func backPressed(_ sender: Any) {
+        DismissVC()
+    }
 }

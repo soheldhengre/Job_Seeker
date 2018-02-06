@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38216BA674B72F2200EEC2DC /* Pods_Job_Seeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF43C5A6DAC04699BA785D7 /* Pods_Job_Seeker.framework */; };
+		7D764F832029835D006D212D /* EmployerChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D764F822029835D006D212D /* EmployerChatCell.swift */; };
 		7D7B71A72024407D00DE4C5F /* JobDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B71A62024407D00DE4C5F /* JobDetailsVC.swift */; };
 		7D7B71A92024561200DE4C5F /* ManageJobCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7B71A82024561200DE4C5F /* ManageJobCell.swift */; };
 		7D8BD279202830E800C40862 /* InboxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BD278202830E800C40862 /* InboxCell.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		42F2B9F856E33877F2BC8040 /* Pods-Job_Seeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Job_Seeker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Job_Seeker/Pods-Job_Seeker.release.xcconfig"; sourceTree = "<group>"; };
+		7D764F822029835D006D212D /* EmployerChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployerChatCell.swift; sourceTree = "<group>"; };
 		7D7B71A62024407D00DE4C5F /* JobDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsVC.swift; sourceTree = "<group>"; };
 		7D7B71A82024561200DE4C5F /* ManageJobCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageJobCell.swift; sourceTree = "<group>"; };
 		7D8BD278202830E800C40862 /* InboxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxCell.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				7DCB75B22020CA7900B67DCE /* SliderMenuCell.swift */,
 				7D7B71A82024561200DE4C5F /* ManageJobCell.swift */,
 				7D8BD278202830E800C40862 /* InboxCell.swift */,
+				7D764F822029835D006D212D /* EmployerChatCell.swift */,
 			);
 			path = View1;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				E93DA3C4202302B5006C6D35 /* JobSeekerRegisterVC.swift in Sources */,
 				7D7B71A72024407D00DE4C5F /* JobDetailsVC.swift in Sources */,
 				7DCB75AF2020C83100B67DCE /* CircleImage.swift in Sources */,
+				7D764F832029835D006D212D /* EmployerChatCell.swift in Sources */,
 				E9EA0B652024CE8B00020AA4 /* ProfileDetailsVC.swift in Sources */,
 				7D9DFA6F20230F590083D586 /* InboxVC.swift in Sources */,
 				E9A2564520231C5C000AC795 /* PlannerVC.swift in Sources */,

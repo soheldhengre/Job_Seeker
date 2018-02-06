@@ -41,4 +41,9 @@ extension ManageJobsVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let VC = storyboard?.instantiateViewController(withIdentifier: "toJobDetailsVC") as? JobDetailsVC else {return}
+        presentVC(VC)
+    }
+    
 }
