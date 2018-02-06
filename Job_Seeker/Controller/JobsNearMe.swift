@@ -37,6 +37,8 @@ class JobsNearMe: UIViewController {
     }
     
     @IBAction func filterBtnWasPressed(_ sender: Any) {
+        let jobNearMeFilter = storyboard?.instantiateViewController(withIdentifier: "JobsNearMeFilter")
+        presentVC(jobNearMeFilter!)
         
     }
 }
