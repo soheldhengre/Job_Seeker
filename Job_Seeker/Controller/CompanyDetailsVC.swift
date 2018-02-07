@@ -19,7 +19,7 @@ class CompanyDetailsVC: UIViewController {
     @IBAction func nxtBtnWasPressed(_ sender: Any) {
         let companyProfileVc = CompanyProfileVC()
         companyProfileVc.modalPresentationStyle = .custom
-        present(companyProfileVc, animated: true, completion: nil)
+        presentVC(companyProfileVc)
         
     }
     

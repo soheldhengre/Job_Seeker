@@ -22,7 +22,22 @@ class JobSeekerProfileVC: UIViewController {
         
     }
 
-  
-
+    @IBAction func personalDeatilsWasPressed(_ sender: Any) {
+        let personalDetailsVC = storyboard?.instantiateViewController(withIdentifier: "JobSeekerProfileDetailsVC")
+        presentVC(personalDetailsVC!)
+        
+        
+    }
+    
+    @IBAction func resumeBuilderWasPressed(_ sender: Any) {
+        
+        
+    }
+    @IBAction func `switch`(_ sender: Any) {
+        
+        
+        
+    }
+    
 
 }
