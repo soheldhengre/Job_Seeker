@@ -11,9 +11,13 @@ import UIKit
 class JobSeekerProfileVC: UIViewController {
 
     @IBOutlet weak var menuBtn: UIButton!
+    @IBOutlet weak var switchMessageView: UIView!
+    @IBOutlet weak var switchBtn: UISwitch!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        switchBtn.addTarget(self, action: #selector(JobSeekerProfileVC.switchBtnWasChanged(_:)), for: .touchUpInside)
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
@@ -21,6 +25,7 @@ class JobSeekerProfileVC: UIViewController {
         
         
     }
+    
 
     @IBAction func personalDeatilsWasPressed(_ sender: Any) {
         let personalDetailsVC = storyboard?.instantiateViewController(withIdentifier: "JobSeekerProfileDetailsVC")
@@ -31,13 +36,25 @@ class JobSeekerProfileVC: UIViewController {
     
     @IBAction func resumeBuilderWasPressed(_ sender: Any) {
         
-        
-    }
-    @IBAction func `switch`(_ sender: Any) {
-        
+        let jobSeekerResumeBuilder = storyboard?.instantiateViewController(withIdentifier: "JobSeekerResumeBuilderVC")
+        presentVC(jobSeekerResumeBuilder!)
         
         
     }
     
+   @objc func switchBtnWasChanged (_ sender : UISwitch) {
+        
+        if sender.isOn {
+            
+        
+            
+        }
+        
+        else {
+            print("off")
+        }
+        
+    }
+
 
 }
