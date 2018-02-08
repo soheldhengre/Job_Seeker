@@ -10,6 +10,7 @@ import UIKit
 
 class JobDetailsVC: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,4 +21,14 @@ class JobDetailsVC: UIViewController {
     @IBAction func backPressed(_ sender: Any) {
         DismissVC()
     }
+    
+    @IBAction func detailsPressed(_ sender: Any) {
+    }
+ 
+    @IBAction func applicantsPressed(_ sender: Any) {
+    }
+    
+    @IBAction func shortlistedPressed(_ sender: Any) {
+    }
+    
 }

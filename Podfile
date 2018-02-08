@@ -9,5 +9,7 @@ target 'Job_Seeker' do
 pod 'Alamofire', '~> 4.5'
 pod 'SVProgressHUD'
 pod 'SlideMenuControllerSwift'
+pod 'BEMCheckBox'
+
 
 end

@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import BEMCheckBox
 
-class JobPostingVC: UIViewController {
+class JobPostingVC: UIViewController, BEMCheckBoxDelegate {
 
+    @IBOutlet weak var fullTimeBox: BEMCheckBox!
+    @IBOutlet weak var partTimeBox: BEMCheckBox!
     @IBOutlet var categories: [UIButton]!
+    
+    @IBOutlet var workingHours: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        fullTimeBox.delegate = self
+        partTimeBox.delegate = self
 
     }
 
+    func didTap(_ checkBox: BEMCheckBox) {
+        if checkBox.tag == 1 {
+            partTimeBox.on = true
+        }
+    }
   
     @IBAction func backPressed(_ sender: Any) {
         DismissVC()
@@ -29,5 +42,15 @@ class JobPostingVC: UIViewController {
             })
         }
     }
+    
+    @IBAction func workingHoursPressed(_ sender: Any) {
+        workingHours.forEach { (buttons) in
+            UIView.animate(withDuration: 0.3, animations: {
+                buttons.isHidden = !buttons.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
     
 }
