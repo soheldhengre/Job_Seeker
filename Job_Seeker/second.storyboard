@@ -411,7 +411,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post A Job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RP4-ou-G2X">
-                                        <rect key="frame" x="141" y="39.666666666666664" width="93.333333333333314" height="24"/>
+                                        <rect key="frame" x="141" y="40" width="93.333333333333314" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -427,7 +427,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Rw0-WE-ue6">
-                                <rect key="frame" x="20" y="212" width="116" height="35"/>
+                                <rect key="frame" x="20" y="222" width="116" height="35"/>
                                 <subviews>
                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pim-HA-FJF" customClass="BEMCheckBox">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -446,7 +446,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="l89-tj-trc">
-                                <rect key="frame" x="233.99999999999997" y="212" width="120.66666666666666" height="35"/>
+                                <rect key="frame" x="234.33333333333334" y="222" width="120.66666666666666" height="35"/>
                                 <subviews>
                                     <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Q7-aA-Wc5" customClass="BEMCheckBox">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
@@ -457,7 +457,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Part Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI3-B4-7Rc">
-                                        <rect key="frame" x="47.000000000000007" y="0.0" width="73.666666666666686" height="35"/>
+                                        <rect key="frame" x="46.999999999999979" y="0.0" width="73.666666666666686" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -465,13 +465,17 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Position Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="beP-UY-6o9" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
-                                <rect key="frame" x="20" y="102" width="335" height="30"/>
+                                <rect key="frame" x="20" y="102" width="335" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ON5-KG-giR"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="W84-tY-CEP">
-                                <rect key="frame" x="20" y="152" width="335" height="40"/>
+                                <rect key="frame" x="20" y="162" width="335" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV0-jR-cl4">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
@@ -488,7 +492,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSH-Jt-LvI">
-                                        <rect key="frame" x="0.0" y="-152" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="-162" width="335" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.81779751712328763" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="EVm-y1-YEX"/>
@@ -499,7 +503,7 @@
                                         </state>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di8-o5-aEt">
-                                        <rect key="frame" x="0.0" y="-152" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="-162" width="335" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.81779751712328763" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Rtc-k1-Jv7"/>
@@ -510,7 +514,7 @@
                                         </state>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCS-jO-Ne5">
-                                        <rect key="frame" x="0.0" y="-152" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="-162" width="335" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.81779751712328763" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ltL-QS-jeC"/>
@@ -521,7 +525,7 @@
                                         </state>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhx-Vi-LZo">
-                                        <rect key="frame" x="0.0" y="-152" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="-162" width="335" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="0.81779751710000004" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="xkY-IU-HXC"/>
@@ -534,7 +538,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0eP-1K-33d">
-                                <rect key="frame" x="20" y="267" width="335" height="40"/>
+                                <rect key="frame" x="20" y="277" width="335" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQb-da-qXd">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
@@ -551,7 +555,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dmz-HA-I5f">
-                                        <rect key="frame" x="0.0" y="-267" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="-277" width="335" height="40"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="X47-Ke-ZUn"/>
@@ -562,7 +566,7 @@
                                         </state>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88J-0B-A2s">
-                                        <rect key="frame" x="0.0" y="-267" width="335" height="40"/>
+                                        <rect key="frame" x="0.0" y="-277" width="335" height="40"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="1FM-Y5-KQ7"/>
@@ -574,11 +578,58 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="gXp-rB-FNU">
+                                <rect key="frame" x="20" y="342" width="335" height="376"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" Job Scope" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ael-gv-fa2">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="185"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text=" Min Requirement" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cvE-Ut-TNZ">
+                                        <rect key="frame" x="0.0" y="207" width="335" height="107"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="107" id="lQD-xV-cwb"/>
+                                        </constraints>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="faq-yH-sZe">
+                                        <rect key="frame" x="0.0" y="336" width="335" height="40"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Years of Exp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AD8-sy-7Q3" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Salary" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-Wv-vHO" customClass="InsetTxtField" customModule="Job_Seeker" customModuleProvider="target">
+                                                <rect key="frame" x="175" y="0.0" width="160" height="40"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q94-rp-7kF">
+                                <rect key="frame" x="0.0" y="738" width="375" height="30"/>
+                                <state key="normal" title=" "/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CH1-PT-9zh" firstAttribute="trailing" secondItem="80d-c0-Z7v" secondAttribute="trailing" id="1SM-O6-00H"/>
                             <constraint firstItem="W84-tY-CEP" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" constant="20" id="8nf-Vg-OcY"/>
+                            <constraint firstItem="gXp-rB-FNU" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" constant="20" id="DPF-MC-S10"/>
+                            <constraint firstItem="q94-rp-7kF" firstAttribute="top" secondItem="gXp-rB-FNU" secondAttribute="bottom" constant="20" id="Ehe-ag-SJT"/>
                             <constraint firstItem="l89-tj-trc" firstAttribute="top" secondItem="W84-tY-CEP" secondAttribute="bottom" constant="20" id="EuY-Dm-Af1"/>
                             <constraint firstItem="80d-c0-Z7v" firstAttribute="trailing" secondItem="W84-tY-CEP" secondAttribute="trailing" constant="20" id="H2V-m8-YRX"/>
                             <constraint firstItem="beP-UY-6o9" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" constant="20" id="Hcm-AY-paH"/>
@@ -586,10 +637,15 @@
                             <constraint firstItem="80d-c0-Z7v" firstAttribute="trailing" secondItem="0eP-1K-33d" secondAttribute="trailing" constant="20" id="O64-SH-vQy"/>
                             <constraint firstItem="Rw0-WE-ue6" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" constant="20" id="OYc-5n-kwh"/>
                             <constraint firstItem="0eP-1K-33d" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" constant="20" id="QIh-o8-gEL"/>
+                            <constraint firstItem="80d-c0-Z7v" firstAttribute="trailing" secondItem="q94-rp-7kF" secondAttribute="trailing" id="Rdu-h1-2Qw"/>
+                            <constraint firstItem="80d-c0-Z7v" firstAttribute="bottom" secondItem="q94-rp-7kF" secondAttribute="bottom" constant="10" id="U38-C2-0j5"/>
                             <constraint firstItem="Rw0-WE-ue6" firstAttribute="top" secondItem="W84-tY-CEP" secondAttribute="bottom" constant="20" id="Umr-fK-uha"/>
                             <constraint firstItem="80d-c0-Z7v" firstAttribute="trailing" secondItem="beP-UY-6o9" secondAttribute="trailing" constant="20" id="WR2-rB-JIh"/>
                             <constraint firstItem="80d-c0-Z7v" firstAttribute="trailing" secondItem="l89-tj-trc" secondAttribute="trailing" constant="20" id="Xr2-2k-Y13"/>
+                            <constraint firstItem="80d-c0-Z7v" firstAttribute="trailing" secondItem="gXp-rB-FNU" secondAttribute="trailing" constant="20" id="YIs-8e-NZd"/>
+                            <constraint firstItem="q94-rp-7kF" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" id="ars-nE-NSH"/>
                             <constraint firstItem="CH1-PT-9zh" firstAttribute="top" secondItem="O1a-we-DF4" secondAttribute="top" id="h5c-a4-Bt4"/>
+                            <constraint firstItem="gXp-rB-FNU" firstAttribute="top" secondItem="0eP-1K-33d" secondAttribute="bottom" constant="25" id="nG6-q1-iCG"/>
                             <constraint firstItem="0eP-1K-33d" firstAttribute="top" secondItem="Rw0-WE-ue6" secondAttribute="bottom" constant="20" id="oCV-2L-BMT"/>
                             <constraint firstItem="beP-UY-6o9" firstAttribute="top" secondItem="CH1-PT-9zh" secondAttribute="bottom" constant="30" id="tqK-UV-xKJ"/>
                             <constraint firstItem="CH1-PT-9zh" firstAttribute="leading" secondItem="80d-c0-Z7v" secondAttribute="leading" id="ysk-EI-SlT"/>
