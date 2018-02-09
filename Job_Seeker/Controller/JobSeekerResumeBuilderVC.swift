@@ -20,6 +20,9 @@ class JobSeekerResumeBuilderVC: UIViewController {
 
     }
 
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        DismissVC()
+    }
     @IBAction func higherEducationBtnWasPressed(_ sender: Any) {
         higherEducationTextField.isUserInteractionEnabled = true
         higherEducationTextField.becomeFirstResponder()

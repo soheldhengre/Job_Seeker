@@ -11,6 +11,8 @@ import UIKit
 class JobsNearMeFilter: UIViewController {
     
     
+    @IBOutlet weak var sliderLbl: UILabel!
+    @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var categorySelect: UIButton!
     @IBOutlet weak var fullTimeSelected: UIButton!
     @IBOutlet var categoryOptions: [UIButton]!
@@ -50,6 +52,14 @@ class JobsNearMeFilter: UIViewController {
             print("return")
         }
     }
+    
+    @IBAction func sliderChanged(_ sender: UISlider) {
+        let currentValue = Int(sender.value)
+        sliderLbl.text = "(Radius \(currentValue)-50km)"
+        
+    }
+    
+    
     
     @IBAction func handelFullTimeSelection(_ sender: UIButton) {
      setUpFullTime()

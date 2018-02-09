@@ -37,4 +37,24 @@ extension JobSeekerSetting:UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let index = indexPath.row
+        
+        switch index {
+        case 0:
+            let JBSNotif = storyboard?.instantiateViewController(withIdentifier: "JBSNotificationAppSettinng")
+            presentVC(JBSNotif!)
+        default:
+            print("abdjs")
+        }
+        
+        
+        
+        
+        
+        
+        
+    }
+    
 }
