@@ -10,6 +10,7 @@ pod 'Alamofire', '~> 4.5'
 pod 'SVProgressHUD'
 pod 'SlideMenuControllerSwift'
 pod 'BEMCheckBox'
+pod 'IQKeyboardManagerSwift'
 
 
 end

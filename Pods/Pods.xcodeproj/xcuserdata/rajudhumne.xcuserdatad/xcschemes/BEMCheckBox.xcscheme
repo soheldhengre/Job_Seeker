@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '1F07EF688CD55AC2FC45C20A18D9BFD9'
-               BlueprintName = 'XLPagerTabStrip'
+               BlueprintIdentifier = 'BC19A72FB7D1DB0B2CC5F6C5CF2400F4'
+               BlueprintName = 'BEMCheckBox'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'XLPagerTabStrip.framework'>
+               BuildableName = 'BEMCheckBox.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

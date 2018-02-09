@@ -8,8 +8,9 @@
 
 import UIKit
 
-class JobSeekerProfileDetailsVC: UIViewController {
-
+class JobSeekerProfileDetailsVC: UIViewController{
+    @IBOutlet weak var submitBtn: UIButton!
+    
     @IBOutlet var availableType: [UIButton]!
     @IBOutlet var jobType: [UIButton]!
     override func viewDidLoad() {
@@ -17,7 +18,13 @@ class JobSeekerProfileDetailsVC: UIViewController {
 
        
     }
-
+    
+  
+    @IBAction func backBtnWasPressed(_ sender: Any) {
+        DismissVC()
+    }
+    
+    
     @IBAction func handelTappedSelection(_ sender: UIButton) {
         jobType.forEach { (button) in
             UIView.animate(withDuration: 0.3, animations: {
@@ -45,6 +52,7 @@ class JobSeekerProfileDetailsVC: UIViewController {
         
     }
     
+  
     
     
     

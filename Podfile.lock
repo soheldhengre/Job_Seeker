@@ -1,21 +1,24 @@
 PODS:
   - Alamofire (4.6.0)
   - BEMCheckBox (1.4.1)
+  - IQKeyboardManagerSwift (5.0.7)
   - SlideMenuControllerSwift (4.0.0)
   - SVProgressHUD (2.2.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
   - BEMCheckBox
+  - IQKeyboardManagerSwift
   - SlideMenuControllerSwift
   - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   BEMCheckBox: 5ba6e37ade3d3657b36caecc35c8b75c6c2b1a4e
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   SlideMenuControllerSwift: 021d6318201c53d4d4d3710517d43d6c556c7dd0
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: 7dc3d6da6facfa426acdfa7909136bdd895c6a18
+PODFILE CHECKSUM: 59b6d334eb6ef8200f4a1512b8706065b89e5d60
 
 COCOAPODS: 1.3.1

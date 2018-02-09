@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F97-Ap-1Pu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wEr-eO-gXW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1189,7 +1189,7 @@
                                                 <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Amf-wD-qIL">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Amf-wD-qIL">
                                                 <rect key="frame" x="306" y="10" width="51" height="31"/>
                                                 <color key="onTintColor" red="0.84655930710000005" green="0.97831916809999997" blue="0.2453774963" alpha="0.87" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="thumbTintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1232,37 +1232,35 @@
                                                     <action selector="resumeBuilderWasPressed:" destination="3YV-sF-Zdk" eventType="touchUpInside" id="hpG-5Y-wGW"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ace-wq-CvT">
-                                                <rect key="frame" x="10" y="205.99999999999994" width="355" height="33"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bWN-b5-wwW">
+                                                <rect key="frame" x="8" y="277.99999999999994" width="359" height="39"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-aX-gcD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="33"/>
-                                                        <string key="text">Turning this On means you are able to start work anytime.This will get automatically turned OFF after 5 Days you can re-enable it.</string>
-                                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="12"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="turning this ON means you are fucking aswesome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GP9-47-gQu">
+                                                        <rect key="frame" x="20" y="11" width="319.33333333333331" height="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="c0d-aX-gcD" firstAttribute="top" secondItem="ace-wq-CvT" secondAttribute="top" id="9XG-F5-9JQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="c0d-aX-gcD" secondAttribute="trailing" id="FHJ-8U-Gwf"/>
-                                                    <constraint firstAttribute="bottom" secondItem="c0d-aX-gcD" secondAttribute="bottom" id="JRT-kZ-E8N"/>
-                                                    <constraint firstItem="c0d-aX-gcD" firstAttribute="leading" secondItem="ace-wq-CvT" secondAttribute="leading" id="yig-sA-eFD"/>
+                                                    <constraint firstItem="GP9-47-gQu" firstAttribute="centerX" secondItem="bWN-b5-wwW" secondAttribute="centerX" id="W7J-VF-Gas"/>
+                                                    <constraint firstAttribute="height" constant="39" id="WlK-Ch-Fce"/>
+                                                    <constraint firstItem="GP9-47-gQu" firstAttribute="centerY" secondItem="bWN-b5-wwW" secondAttribute="centerY" id="uNF-WV-SUj"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="XPD-Je-zvM" firstAttribute="bottom" secondItem="bWN-b5-wwW" secondAttribute="bottom" constant="8" id="68E-gf-gzc"/>
                                             <constraint firstItem="GLq-JG-446" firstAttribute="leading" secondItem="4UO-Ev-4Bo" secondAttribute="leading" constant="29" id="6zF-ir-g2i"/>
                                             <constraint firstItem="k5k-88-o1f" firstAttribute="top" secondItem="8wV-L0-wXe" secondAttribute="bottom" constant="40" id="8ot-y2-yhw"/>
                                             <constraint firstItem="Amf-wD-qIL" firstAttribute="top" secondItem="4UO-Ev-4Bo" secondAttribute="top" constant="10" id="B2P-kq-uo0"/>
                                             <constraint firstItem="7uj-0r-Saw" firstAttribute="leading" secondItem="4UO-Ev-4Bo" secondAttribute="leading" constant="55" id="BOJ-Oa-Uge"/>
-                                            <constraint firstItem="XPD-Je-zvM" firstAttribute="trailing" secondItem="ace-wq-CvT" secondAttribute="trailing" constant="10" id="Cx6-C9-pRi"/>
-                                            <constraint firstItem="ace-wq-CvT" firstAttribute="leading" secondItem="XPD-Je-zvM" secondAttribute="leading" constant="10" id="GHy-gK-AVN"/>
                                             <constraint firstItem="8wV-L0-wXe" firstAttribute="centerX" secondItem="4UO-Ev-4Bo" secondAttribute="centerX" id="IjN-Ft-mH2"/>
                                             <constraint firstItem="7uj-0r-Saw" firstAttribute="top" secondItem="8wV-L0-wXe" secondAttribute="bottom" constant="40" id="K5O-yX-x6K"/>
-                                            <constraint firstItem="ace-wq-CvT" firstAttribute="centerY" secondItem="4UO-Ev-4Bo" secondAttribute="centerY" constant="60" id="WDA-Pv-J2X"/>
+                                            <constraint firstItem="XPD-Je-zvM" firstAttribute="trailing" secondItem="bWN-b5-wwW" secondAttribute="trailing" constant="8" id="MbX-QE-OTY"/>
+                                            <constraint firstItem="bWN-b5-wwW" firstAttribute="leading" secondItem="XPD-Je-zvM" secondAttribute="leading" constant="8" id="RId-Ps-z0v"/>
                                             <constraint firstAttribute="trailing" secondItem="k5k-88-o1f" secondAttribute="trailing" constant="55" id="ZZ7-3m-xLV"/>
                                             <constraint firstItem="8wV-L0-wXe" firstAttribute="top" secondItem="4UO-Ev-4Bo" secondAttribute="top" constant="15" id="d1c-KF-r5d"/>
                                             <constraint firstItem="GLq-JG-446" firstAttribute="top" secondItem="8wV-L0-wXe" secondAttribute="bottom" constant="20" id="dhl-cr-Wgw"/>
@@ -1302,8 +1300,8 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="man" selectedImage="man" id="4ig-Sl-wiW"/>
                     <connections>
                         <outlet property="menuBtn" destination="LlI-no-yiv" id="3pd-n8-j03"/>
+                        <outlet property="messageView" destination="bWN-b5-wwW" id="O5Q-Gx-qn9"/>
                         <outlet property="switchBtn" destination="Amf-wD-qIL" id="Ofo-JS-nRY"/>
-                        <outlet property="switchMessageView" destination="ace-wq-CvT" id="FlF-DQ-Syv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e80-93-g0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1334,6 +1332,9 @@
                                             <constraint firstAttribute="height" constant="25" id="Fqq-Av-sOL"/>
                                         </constraints>
                                         <state key="normal" image="back_arrow"/>
+                                        <connections>
+                                            <action selector="backBtnWasPressed:" destination="y51-Lg-WRL" eventType="touchUpInside" id="DDW-Eu-oUP"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -1491,6 +1492,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="y51-Lg-WRL" id="gPX-6D-CUs"/>
+                                </connections>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mDi-76-g07">
                                 <rect key="frame" x="10" y="738" width="355" height="40"/>
@@ -1544,6 +1548,7 @@
                         <viewLayoutGuide key="safeArea" id="BHL-VV-iQQ"/>
                     </view>
                     <connections>
+                        <outlet property="submitBtn" destination="mDi-76-g07" id="vAJ-r0-C0X"/>
                         <outletCollection property="jobType" destination="atc-mz-Clf" collectionClass="NSMutableArray" id="t2s-Zm-3OR"/>
                         <outletCollection property="jobType" destination="hfn-bW-DH3" collectionClass="NSMutableArray" id="DhS-Uj-GOO"/>
                         <outletCollection property="availableType" destination="SLg-Vw-pmn" collectionClass="NSMutableArray" id="Wak-SM-ogK"/>

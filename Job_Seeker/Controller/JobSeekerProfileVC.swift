@@ -10,8 +10,10 @@ import UIKit
 
 class JobSeekerProfileVC: UIViewController {
 
+  
     @IBOutlet weak var menuBtn: UIButton!
-    @IBOutlet weak var switchMessageView: UIView!
+ 
+    @IBOutlet weak var messageView: UIView!
     @IBOutlet weak var switchBtn: UISwitch!
 
     override func viewDidLoad() {
@@ -22,6 +24,8 @@ class JobSeekerProfileVC: UIViewController {
         
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        messageView.isHidden = true
         
         
     }
@@ -45,16 +49,17 @@ class JobSeekerProfileVC: UIViewController {
    @objc func switchBtnWasChanged (_ sender : UISwitch) {
         
         if sender.isOn {
-            
-        
-            
+           messageView.isHidden = false
+            messageView.alpha = 1.0
+            UIView.animate(withDuration: 3.0, animations: {
+                self.messageView.alpha = 0.0
+            }, completion: { (complete) in
+                self.messageView.isHidden = true
+            })
         }
-        
-        else {
-            print("off")
-        }
-        
     }
+    
+    
 
 
 }
