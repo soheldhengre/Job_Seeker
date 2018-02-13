@@ -45,16 +45,20 @@ extension JobSeekerSetting:UITableViewDelegate,UITableViewDataSource {
         case 0:
             let JBSNotif = storyboard?.instantiateViewController(withIdentifier: "JBSNotificationAppSettinng")
             presentVC(JBSNotif!)
+            
+        case 2:
+            let JBSPrivacy = storyboard?.instantiateViewController(withIdentifier: "PrivacyVC")
+            presentVC(JBSPrivacy!)
+            
+        case 3:
+            let JBSTerms = storyboard?.instantiateViewController(withIdentifier: "TermsAndCondition")
+            presentVC(JBSTerms!)
+        case 4:
+            let JBSContact = storyboard?.instantiateViewController(withIdentifier: "JBSSettingContactUs")
+            presentVC(JBSContact!)
         default:
             print("abdjs")
         }
-        
-        
-        
-        
-        
-        
-        
     }
     
 }

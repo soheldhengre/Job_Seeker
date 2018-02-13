@@ -1,14 +1,14 @@
 //
-//  JBSNotificationAppSettinng.swift
+//  PrivacyVC.swift
 //  Job_Seeker
 //
-//  Created by Raju Dhumne on 09/02/18.
+//  Created by Raju Dhumne on 12/02/18.
 //  Copyright © 2018 Sohel Dengre. All rights reserved.
 //
 
 import UIKit
 
-class JBSNotificationAppSettinng: UIViewController {
+class PrivacyVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,17 +16,10 @@ class JBSNotificationAppSettinng: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func switchChangeValue(_ sender: Any) {
-        
-    }
-    
-    @IBAction func changePassword(_ sender: Any) {
-        
-    }
-    
     @IBAction func backBtnWasPressed(_ sender: Any) {
         DismissVC()
-    
+        
     }
     
+
 }
